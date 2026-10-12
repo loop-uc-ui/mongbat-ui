@@ -49,11 +49,6 @@ it is UTF-16 text. Copy the file before you start the client again, because
 the client rewrites it at every start. The line in it that holds `build=`
 names the build.
 
-## This repository
-
-This repository holds the releases of mongbat-ui and its issues. The source
-code is kept in another repository, which is not public.
-
 ## License
 
 The UI in each release is under the [MIT License](LICENSE).
