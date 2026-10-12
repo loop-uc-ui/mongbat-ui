@@ -1,7 +1,7 @@
 # What the MIT License does not cover
 
 The [MIT License](LICENSE) covers the code in each release of mongbat-ui and
-the documents in this repository. It does not cover the following. The paths
+the documents that come with it. It does not cover the following. The paths
 below are paths inside a release's zip file.
 
 ## Icons and textures
