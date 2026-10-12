@@ -4,23 +4,6 @@ A replacement interface for the Ultima Online Enhanced Client. It changes how
 the game's windows look and work. It does not change the game itself, and you
 can switch back to the default interface at any time.
 
-## Beta
-
-This is a beta release. Some things may be missing or may not work. The
-default interface stays available from the **Custom UI** list on the login
-screen, so you can switch back whenever you want. If you find a problem,
-please report it on the
-[issues page](https://github.com/loop-uc-ui/mongbat-ui/issues).
-
-## What you get
-
-- Hotbars, macros and an actions list.
-- A paperdoll, a character sheet and saved equipment sets.
-- Bags that show their contents as a grid or as a list, and an organizer.
-- A map with your own waypoints and a search.
-- Health bars, a party bar, a buff bar and a target window.
-- Skills, spells, chat, shops and trading, in the same style.
-
 ## Install
 
 You need the Ultima Online Enhanced Client. The Classic Client cannot load a
