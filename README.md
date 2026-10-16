@@ -43,11 +43,13 @@ Report a problem on the
 - what you did, what you expected and what happened,
 - a screenshot, if the problem can be seen.
 
-The client writes a file named `logs/lua.log` in its install folder. Attach
-that file to the issue as a file, by dragging it in. Do not paste it, because
-it is UTF-16 text. Copy the file before you start the client again, because
-the client rewrites it at every start. The line in it that holds `build=`
-names the build.
+A log helps. In the game, open Settings, and on the Options page, under
+System, turn on **Write a log for bug reports**. Make the problem happen again.
+The game writes `logs/lua.log` in its install folder. Attach that file to the
+issue as a file, by dragging it in. Do not paste it, because it is UTF-16
+text. Copy the file before you start the game again, because the game
+rewrites it at every start. Then turn the setting off, because the file grows
+while it is on.
 
 ## License
 
