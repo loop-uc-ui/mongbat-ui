@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Organizer · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Organizer</h1>
+<p dir="auto">The organizer moves items between your open containers by rules. A profile is a named set of rules, and each rule names one kind of item in one colour. A profile either files things away or fetches supplies, and it sends them to a bag that you choose, or to your backpack when you choose none.</p>
+<p dir="auto">The window's title is the profile's name and how many rules it holds. Under the rules stand the profile picker with its two small buttons, and two rows of buttons: Add item and the bag button, then Run and the mode button.</p>
+<p dir="auto">In the Organize mode, the profile moves every item that a rule names into the bag. In the Restock mode, it fills the bag until it holds the count that each rule keeps, and each rule shows that count at the right.</p>
+<div class="grid">
+  <figure id="file-gems">
+    <div class="shot"><a href="organizer/file-gems.png"><img src="organizer/file-gems.png" alt="Organizer, file-gems" loading="lazy"></a></div>
+    <figcaption>A profile named Gems that files gems into a pouch. It holds eight rules, each with the gem's picture and name. The bag button reads Change bag, because a bag is chosen, and the mode button reads Mode: Organize.</figcaption>
+  </figure>
+  <figure id="picker-list">
+    <div class="shot"><a href="organizer/picker-list.png"><img src="organizer/picker-list.png" alt="Organizer, picker-list" loading="lazy"></a></div>
+    <figcaption>The list that opens under the profile picker. It offers the saved profiles, Gems and Hunting kit, and a tick marks the profile in force.</figcaption>
+  </figure>
+  <figure id="restock">
+    <div class="shot"><a href="organizer/restock.png"><img src="organizer/restock.png" alt="Organizer, restock" loading="lazy"></a></div>
+    <figcaption>A profile named Hunting kit that fetches supplies. The mode button reads Mode: Restock, and each rule shows how many to keep. The bag button reads Set bag, because the profile has no bag, so its supplies go to the backpack.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The Organizer action, in the Menu Actions group of the Actions window, opens it and closes it again. You can put that action on a hotbar.</li>
+<li>Agents Settings in the main menu opens it.</li>
+<li>Agents in the paperdoll's menu opens it.</li>
+<li>The Organize or Restock button on a container opens it when the profile has nothing to move or no rules to run.</li>
+<li>A right-click closes the window. Closing it stops a sweep that it started.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click the profile picker to choose another profile from the list.</li>
+<li>Click the + button to make a new profile. Click the - button to delete the chosen profile and its rules.</li>
+<li>Click Add item, then target an item. Every item of that kind and colour is then collected by the profile.</li>
+<li>Click Set bag or Change bag, then target a container to send things there.</li>
+<li>Click Mode to switch the profile between Organize and Restock. Its rules stay.</li>
+<li>Click Run to start moving items from every open container. While it runs, the button reads Stop, and a click stops it.</li>
+<li>Hover over a button to read what it does.</li>
+<li>Shift+right-click a rule to forget it. In the Restock mode, the same menu also sets how many to keep.</li>
+<li>Roll the mouse wheel to scroll a long list of rules.</li>
+<li>Drag the corner grip to resize the window.</li>
+<li>Right-click to close the window.</li>
+</ul>
+
+</main>
+<footer>Pictures drawn from commit 58ee1920 on 2026-10-16. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

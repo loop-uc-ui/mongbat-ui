@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confirmation · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Confirmation</h1>
+<p dir="auto">A confirmation is a small box in the middle of the screen that asks you a question before something that is hard to undo, or tells you something that you must read. The title says what it is about, and the words under it give the question or the message.</p>
+<p dir="auto">Most confirmations ask a question and have two buttons. One button says yes and the other is Cancel. A message that has nothing to decline has one button, Okay. Only one confirmation is up at a time, and a new one takes the place of the old.</p>
+<div class="grid">
+  <figure id="destroy-menu-bar">
+    <div class="shot"><a href="confirm/destroy-menu-bar.png"><img src="confirm/destroy-menu-bar.png" alt="Confirmation, destroy-menu-bar" loading="lazy"></a></div>
+    <figcaption>The same question when you destroy the hotbar that the default UI made. A second paragraph says that the default UI will make a new menu bar when it next runs.</figcaption>
+  </figure>
+  <figure id="link">
+    <div class="shot"><a href="confirm/link.png"><img src="confirm/link.png" alt="Confirmation, link" loading="lazy"></a></div>
+    <figcaption>A question that asks &quot;Open this link in your browser?&quot; with the web address under it, and Okay and Cancel under that.</figcaption>
+  </figure>
+  <figure id="question">
+    <div class="shot"><a href="confirm/question.png"><img src="confirm/question.png" alt="Confirmation, question" loading="lazy"></a></div>
+    <figcaption>A question with a title, three lines of words, and two buttons. The button that says yes carries the name of the action, Destroy Hotbar, and Cancel stands beside it.</figcaption>
+  </figure>
+  <figure id="tell">
+    <div class="shot"><a href="confirm/tell.png"><img src="confirm/tell.png" alt="Confirmation, tell" loading="lazy"></a></div>
+    <figcaption>A message with one button. It says &quot;Network Error&quot; and &quot;Connection lost&quot;, and Okay is the only button.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>A confirmation opens when something asks for your agreement. Examples are destroying a hotbar, choosing Log Out or Exit Game, opening a link that a server window offers, taking a key that another binding holds, and an action that the server warns may flag you criminal.</li>
+<li>A message with one button opens when the game has news for you, such as a lost connection.</li>
+<li>Pressing the yes button, Okay or Cancel closes it.</li>
+<li>Nothing else closes it. A right-click and the Escape key do nothing. The one exception is the Log Out question while the game makes you wait after a fight: when the wait ends, the box closes by itself and logs you out.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click the yes button, or Okay, to agree. The action then goes ahead.</li>
+<li>Click Cancel to decline. Nothing happens, and the box closes.</li>
+<li>On a message with one button, click Okay to close it. When the connection is lost, closing the message logs you out.</li>
+<li>Drag the box to move it.</li>
+</ul>
+
+</main>
+<footer>Pictures drawn from commit 58ee1920 on 2026-10-16. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Target · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Target</h1>
+<p dir="auto">The target window shows what you have targeted. For a creature or a person it draws the same health bar as a parked health bar, with the name in the colour of notoriety, the bar of health, the percent and the distance in tiles. For an item or a corpse it shows the name and the distance, and no bar.</p>
+<p dir="auto">When you target a pet of your own, a row of command buttons stands under the distance. The server's quick actions for other characters, such as banking or taming, appear there too when the server offers them.</p>
+<div class="grid">
+  <figure id="corpse">
+    <div class="shot"><a href="target/corpse.png"><img src="target/corpse.png" alt="Target, corpse" loading="lazy"></a></div>
+    <figcaption>A corpse of an orc brute, three tiles away. It has a name and a distance, and no bar.</figcaption>
+  </figure>
+  <figure id="creature">
+    <div class="shot"><a href="target/creature.png"><img src="target/creature.png" alt="Target, creature" loading="lazy"></a></div>
+    <figcaption>A hostile mongbat at three fifths of its health, six tiles away. Its name is red.</figcaption>
+  </figure>
+  <figure id="long-name">
+    <div class="shot"><a href="target/long-name.png"><img src="target/long-name.png" alt="Target, long-name" loading="lazy"></a></div>
+    <figcaption>A knight whose name is too long for the window. The name is cut at a word and ends in dots, and a hover shows all of it.</figcaption>
+  </figure>
+  <figure id="pet">
+    <div class="shot"><a href="target/pet.png"><img src="target/pet.png" alt="Target, pet" loading="lazy"></a></div>
+    <figcaption>One of your pets at most of its health, two tiles away. A row of buttons under the distance holds the pet commands Guard, Follow, Kill and Stay, and a hand that stops the pet.</figcaption>
+  </figure>
+  <figure id="poisoned-pet">
+    <div class="shot"><a href="target/poisoned-pet.png"><img src="target/poisoned-pet.png" alt="Target, poisoned-pet" loading="lazy"></a></div>
+    <figcaption>The same pet when it is poisoned. The bar is green, and the word &quot;Poisoned&quot; stands beside the percent.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The window opens by itself when you target a creature, a person, an item or a corpse.</li>
+<li>It closes by itself when you have no target.</li>
+<li>A right-click does not close it, so that a missed click in a fight cannot hide your target's health.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click the bar to target the creature again.</li>
+<li>Control+click the bar to choose the spell that a quick cast puts on the creature. Shift+click it to cast that spell on the creature.</li>
+<li>Double-click the bar to open the creature's paperdoll.</li>
+<li>Drop an item on the bar to give it to the creature.</li>
+<li>Shift+right-click the bar to open the server's menu for the creature.</li>
+<li>Click a command button to do that action on the target. A button fades while the action is out of reach: banking beyond a short distance, taming beyond a shorter one, or any action the server greys out.</li>
+<li>Hover over a command button to read its name.</li>
+<li>Hover over the window while an item or a corpse is targeted to see its properties.</li>
+<li>Hover over a name that is cut off to read it whole.</li>
+<li>Drag the window to move it. With the Lock the layout setting on, it stays where it is.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>The target window shows the target's health and distance, with command buttons for your pets.</li></ul>
+</main>
+<footer>Pictures drawn from commit 58ee1920 on 2026-10-16. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

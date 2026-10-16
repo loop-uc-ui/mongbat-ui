@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paperdoll · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Paperdoll</h1>
+<p dir="auto">The paperdoll shows what a character is wearing, and lets you put gear on and take it off. The character's name stands at the top in the colour of their notoriety, with their title on a line under it.</p>
+<p dir="auto">The window has two views. The gear view shows a square for each place on the body, with a faint outline in each empty one. The picture view shows the character as the game draws them. A piece of gear that is wearing out gets a yellow frame at half its durability and a red frame at a quarter, with the percent left in its corner.</p>
+<p dir="auto">Your own paperdoll has more along its foot: a square for war and peace, a square for each special ability you can use, and your backpack. Another character's paperdoll shows only their gear and their backpack.</p>
+<div class="grid">
+  <figure id="dragged">
+    <div class="shot"><a href="paperdoll/dragged.png"><img src="paperdoll/dragged.png" alt="Paperdoll, dragged" loading="lazy"></a></div>
+    <figcaption>Your own paperdoll after its corner grip was dragged to make it larger. The figure grows with the window, while the heading and the squares at the foot keep their size. In the gear view, the gear squares grow too.</figcaption>
+  </figure>
+  <figure id="enhanced">
+    <div class="shot"><a href="paperdoll/enhanced.png"><img src="paperdoll/enhanced.png" alt="Paperdoll, enhanced" loading="lazy"></a></div>
+    <figcaption>The picture view with the client's enhanced paperdoll art, not its legacy art. The figure stands in the middle of the window.</figcaption>
+  </figure>
+  <figure id="gear">
+    <div class="shot"><a href="paperdoll/gear.png"><img src="paperdoll/gear.png" alt="Paperdoll, gear" loading="lazy"></a></div>
+    <figcaption>Your own paperdoll in the gear view, with something worn in most squares. Two worn-down pieces have frames that show their wear, and the bow in hand gives two ability squares at the foot.</figcaption>
+  </figure>
+  <figure id="other-character">
+    <div class="shot"><a href="paperdoll/other-character.png"><img src="paperdoll/other-character.png" alt="Paperdoll, other-character" loading="lazy"></a></div>
+    <figcaption>Another character's paperdoll. It shows only their gear and their backpack.</figcaption>
+  </figure>
+  <figure id="picture">
+    <div class="shot"><a href="paperdoll/picture.png"><img src="paperdoll/picture.png" alt="Paperdoll, picture" loading="lazy"></a></div>
+    <figcaption>Your own paperdoll in the picture view. The window keeps the same size as the gear view.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The Character Window key in the client's key settings opens your own paperdoll, and closes it again.</li>
+<li>The Paperdoll action, in the Menu Actions group of the Actions window, opens or closes your own paperdoll. You can put the action on a hotbar. The default UI's Character command does the same.</li>
+<li>Double-click another character in the world, or their row in the party bar, to open their paperdoll.</li>
+<li>The Block Other Paperdolls setting stops other characters' paperdolls from opening. Your own still opens.</li>
+<li>A right-click anywhere on the window closes it. Your own paperdoll opens again where you last left it.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Hover over a piece of gear to see its name and properties. This works on the squares and on the picture.</li>
+<li>Double-click a piece of gear to use it.</li>
+<li>Drag a piece of gear off the paperdoll to take it off.</li>
+<li>Drop a piece of gear on the paperdoll to wear it. Drop it on a square or on the picture to aim at that place.</li>
+<li>Click the view switch in the top right corner to change between the gear view and the picture view. Its hover says which view it moves to, and the paperdoll remembers your choice.</li>
+<li>On your own paperdoll, click the three dots in the top right corner, to the right of the view switch, for a menu of your windows, such as Character, Skills, Map and Settings. The menu ends with Log Out and Exit, and both ask first.</li>
+<li>On your own paperdoll, click the war square to change between war and peace. Its frame is red in war mode, and its hover names the mode.</li>
+<li>Hover over an ability square to read what the ability does. Double-click it to make the ability ready, and its frame turns green. Drag it onto a hotbar to keep it there.</li>
+<li>Click the backpack square to open the backpack. On another character's paperdoll, this tries to look inside their pack. Hover over it to see the backpack's properties.</li>
+<li>When the character has a title or the name is cut off, hover over the name to read the whole line.</li>
+<li>Drag the corner grip to make the paperdoll larger.</li>
+<li>With the Wheel resizes panels setting on, the mouse wheel makes the window larger or smaller.</li>
+<li>Shift+right-click a piece of gear to open its menu.</li>
+<li>Right-click to close the window.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>The paperdoll has a gear view and a picture view, with your backpack, your war square and your special abilities along its foot.</li></ul>
+</main>
+<footer>Pictures drawn from commit 58ee1920 on 2026-10-16. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

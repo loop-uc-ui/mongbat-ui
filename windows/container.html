@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Container · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Container</h1>
+<p dir="auto">A container window shows what is inside a backpack, a bag, a box or a corpse. Each item is a small picture in a grid of cells, and a stack of items shows its count under the picture. The bag's name stands at the top, in the box where you can type to search the bag.</p>
+<p dir="auto">Every container you open gets a window of its own. The windows open a step apart, so that each one leaves the title of the one beneath it in reach. Your backpack opens where you last left it. The other containers share one size, which is the size you last dragged a container to.</p>
+<div class="grid">
+  <figure id="backpack-freeform">
+    <div class="shot"><a href="container/backpack-freeform.png"><img src="container/backpack-freeform.png" alt="Container, backpack-freeform" loading="lazy"></a></div>
+    <figcaption>Your backpack in the freeform view, which draws the bag as its own picture with the items lying inside it. The button at the top right switches back to the grid.</figcaption>
+  </figure>
+  <figure id="backpack-grid">
+    <div class="shot"><a href="container/backpack-grid.png"><img src="container/backpack-grid.png" alt="Container, backpack-grid" loading="lazy"></a></div>
+    <figcaption>Your backpack in the grid view, holding thirty-one items. Five of them are stacks, and each stack shows its count. The Organize button stands at the foot, and the button at the top right switches to the bag's own picture.</figcaption>
+  </figure>
+  <figure id="corpse">
+    <div class="shot"><a href="container/corpse.png"><img src="container/corpse.png" alt="Container, corpse" loading="lazy"></a></div>
+    <figcaption>A lizardman's corpse in the grid view. The corpse holds seven things, one of them a stack of coins. The Loot All button stands at the foot, where Organize stands on other containers.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>Double-click a bag, a box or a corpse in the world, or in another container, and the server opens it.</li>
+<li>The backpack key in the client's key settings opens your backpack, and closes it again.</li>
+<li>The Backpack action, in the Menu Actions group of the Actions window, does the same. You can put the action on a hotbar.</li>
+<li>The freeform view button closes the window and opens the bag again in the freeform view.</li>
+<li>A right-click on the window's padding or footer closes it. A right-click on an item closes the window too.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Double-click an item to use it. Double-click a bag to open it in a window of its own.</li>
+<li>Press on an item and drag it to pick it up. Release it on a cell or on the window to drop it into this container.</li>
+<li>Control+press on a stack and drag to take one item from it.</li>
+<li>Drag the window by its padding to move it. With the Lock the layout setting on, it stays where it is.</li>
+<li>Roll the mouse wheel over the window to scroll the rows.</li>
+<li>Drag the scroll bar to move through the rows.</li>
+<li>Hover over an item to read its name and its properties.</li>
+<li>Type in the box at the top to show only the items that match. Words are matched against item names and properties, and every word has to match. Put <code class="notranslate">or</code> or <code class="notranslate">|</code> between words to accept either one. Put <code class="notranslate">-</code> or <code class="notranslate">not</code> before a word to leave out items that match it.</li>
+<li>A search also looks inside the bags in this container. Matches found there join the end of the list, and the box's tooltip names the bags that hold them.</li>
+<li>Press Escape in the box to empty it and show everything again.</li>
+<li>Click Loot All on a corpse to move its items into your backpack one at a time. It becomes Stop while it works, and a second click stops it. When the box holds a search, the button reads Loot with the number of matches, and only the matches move.</li>
+<li>On a container that is not a corpse, the footer button appears only once the box holds a search. It reads Take with the number of matches, and it moves them into your backpack. Your own backpack never shows it.</li>
+<li>Click Organize to move items by the rules of your chosen profile in the Organizer window. When the profile has nothing to move, the click opens the Organizer window instead. The button reads Restock when that profile fetches items, and Stop while the work goes on.</li>
+<li>Click the button at the top right to switch between the grid and the freeform view, when the bag has a picture of its own to draw. Hover over it to see which view it leads to.</li>
+<li>Drag the corner grip to make the grid wider, narrower, taller or shorter. Every container then opens at that size.</li>
+<li>Shift+right-click an item on a corpse to loot it at once. On other containers it opens the item's menu.</li>
+<li>Shift+right-click the window's padding or footer to open a menu with Narrower and Wider, which change the number of columns.</li>
+<li>Right-click to close the window.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>Containers show a grid of items or the bag's own picture. A find box searches the bag and the bags inside it, and a corpse has Loot All.</li></ul>
+</main>
+<footer>Pictures drawn from commit 58ee1920 on 2026-10-16. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

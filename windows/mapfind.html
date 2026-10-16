@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find a Place · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Find a Place</h1>
+<p dir="auto">The place finder looks up a place by name and moves the map to it. You type in the box at the top, and the list below shows every match. Each row gives the name of a place and the world it lies in. The title counts the matches, with a plus sign when the search stopped before the end of the list.</p>
+<p dir="auto">Your own waypoints that match come first, and an asterisk stands before their names. Only the waypoints in the world that the map shows are searched. The named places of the world follow them. When you type a sextant reading or a pair of map numbers, a row for that point heads the list.</p>
+<div class="grid">
+  <figure id="cove">
+    <div class="shot"><a href="mapfind/cove.png"><img src="mapfind/cove.png" alt="Find a Place, cove" loading="lazy"></a></div>
+    <figcaption>The finder with &quot;cove&quot; typed in. Your own waypoint, Cove smithy, comes first with its asterisk. The places with &quot;cove&quot; in their names, such as Cove, Covetous and Cove Docks, follow it, first in Felucca and then in Trammel. A scroll bar stands at the right, because the list holds more rows than the window shows.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The Find a place item in the map's menu opens the finder. The map's menu opens from the three dots on the map.</li>
+<li>The Find a place action, in the Menu Actions group of the Actions window, opens and closes it. You can put the action on a hotbar.</li>
+<li>Press Escape in the box to put the window away. A right-click on the window also closes it.</li>
+<li>The next time it opens, the box is empty.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Type part of a name. The list narrows as you type.</li>
+<li>Click a row to move the map to that place. The map stops following you and shows the world of the place.</li>
+<li>Press Enter to move the map to the first row of the list.</li>
+<li>Hover over a row to read the place's name, its world and its numbers. The hover also says when the place is one of your own marks.</li>
+<li>Roll the mouse wheel over the list to scroll it.</li>
+<li>Drag the corner grip to make the window larger or smaller.</li>
+<li>Drag the box at the top to move the window.</li>
+<li>Right-click to close the window.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>The map lists only your own waypoints, and has a find box and a legend.</li></ul>
+</main>
+<footer>Pictures drawn from commit 58ee1920 on 2026-10-16. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Shop</h1>
+<p dir="auto">The shop window is where you buy from a vendor or sell to one. The list on the left shows what the vendor sells, or what the vendor will buy from you, with the count and the price of each item. The list on the right is your order, and the total under it says what the order costs or what it will bring.</p>
+<p dir="auto">The heading names the vendor and says how many items the left list holds. When you are buying, the total also says how much gold you carry, and it turns red when the order costs more than that.</p>
+<div class="grid">
+  <figure id="buy">
+    <div class="shot"><a href="shop/buy.png"><img src="shop/buy.png" alt="Shop, buy" loading="lazy"></a></div>
+    <figcaption>Buying from a bowyer. The left list shows what the bowyer sells, with the stock and the price of each. The order on the right holds two composite bows, a quiver and twelve arrows, with the total under it.</figcaption>
+  </figure>
+  <figure id="sell">
+    <div class="shot"><a href="shop/sell.png"><img src="shop/sell.png" alt="Shop, sell" loading="lazy"></a></div>
+    <figcaption>Selling to the same bowyer. The left list shows what the player carries that the bowyer will buy, and the order on the right says how much gold it will bring.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The window opens when a vendor offers to sell to you or to buy from you.</li>
+<li>Accept sends your order to the vendor and closes the window.</li>
+<li>Cancel closes the window without buying or selling anything.</li>
+<li>A right-click anywhere on the window closes it, the same as Cancel.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click an item in the left list to add one to your order.</li>
+<li>Click the # button on an item's row to type how many you want. The order never holds more than the vendor has.</li>
+<li>Click an item in your order to take one off.</li>
+<li>Shift+right-click an item in either list to take one off your order.</li>
+<li>Type in the Item Search box under the left list to show only the items whose names match. Press Escape to empty the box.</li>
+<li>Hover over an item whose name is cut off to read it whole.</li>
+<li>Roll the mouse wheel over a list to scroll it. With the Wheel resizes panels setting on, the lists do not scroll.</li>
+<li>Drag the corner grip to resize the window. Every vendor's window opens at the size you leave it.</li>
+<li>Shift+right-click the heading to fill your order from one of the profiles in the Agents window. The same menu has Clear, which empties the order.</li>
+<li>Right-click to close the window.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>The shop window has a find box, and a right-click or Cancel closes it.</li></ul>
+</main>
+<footer>Pictures drawn from commit 58ee1920 on 2026-10-16. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

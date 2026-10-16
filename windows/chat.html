@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chat · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Chat</h1>
+<p dir="auto">The chat window shows everything that is said around you and to you, one line after another, each in the colour of its channel. A row of tabs across the top picks which channels a tab shows, so one tab can hold only party and guild talk while another holds everything.</p>
+<p dir="auto">Each line starts with the name of whoever spoke. System messages, such as skill gains and gold picked up, have no name in front. The newest line sits at the foot of the window. The typing line stands under the window and is described on its own page.</p>
+<div class="grid">
+  <figure id="journal">
+    <div class="shot"><a href="chat/journal.png"><img src="chat/journal.png" alt="Chat, journal" loading="lazy"></a></div>
+    <figcaption>The chat on its Journal tab, which shows every channel. Say, whisper, yell and emote lines are yellow. Party and guild lines are two shades of green, alliance lines are cyan, private lines are magenta, channel and Global Chat lines are blue, and system lines are white. A Guild tab is missing from the row because it has been taken out into a window of its own.</figcaption>
+  </figure>
+  <figure id="tab-apart">
+    <div class="shot"><a href="chat/tab-apart.png"><img src="chat/tab-apart.png" alt="Chat, tab-apart" loading="lazy"></a></div>
+    <figcaption>The Guild tab standing apart in a window of its own. It shows the guild and party lines, and the system messages that every tab shows.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The chat is on when you enter the game.</li>
+<li>The key that starts a line of chat shows the chat and puts the cursor in the typing line.</li>
+<li>The Chat log action, in the Menu Actions group of the Actions window, puts the chat away and brings it back. You can put the action on a hotbar. The chat keeps its lines while it is away.</li>
+<li>A tab that stands apart has a window of its own. The window goes away when you put the tab back or remove it.</li>
+<li>A plain right-click does not close the chat.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click a tab to show it. The tab you chose stays chosen the next time you play.</li>
+<li>Roll the mouse wheel over the lines to scroll back to older ones.</li>
+<li>Shift+right-click a tab to open its menu. Chat Filters lists the channels, with a tick on each channel the tab shows, and clicking one shows or hides it. New Tab adds a tab, and Rename Tab asks for a name. Extract takes the tab out into a window of its own, and Re-Integrate puts it back. Remove Tab deletes it. The last tab in the row cannot be removed or taken out.</li>
+<li>Shift+right-click the lines, or the window around them, to open the chat menu. It has Speak on, Channels, Friends and Ignore Player. The same menu opens from the button at the left end of the typing line.</li>
+<li>Drag the corner grip to resize the chat. A tab in a window of its own has its own grip and keeps its own size.</li>
+<li>Drag the chat window to move it.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>The chat has a menu for channels, Global Chat friends and ignore lists.</li></ul>
+</main>
+<footer>Pictures drawn from commit 58ee1920 on 2026-10-16. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

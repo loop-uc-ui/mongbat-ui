@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trade · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Trade</h1>
+<p dir="auto">The trade window is where you and another player swap items and gold. Your offer stands on the left, and the other player's offer stands on the right. Each side lists its items with their pictures and the count of each stack. Above each list, the heading says how much gold is offered with it. Your heading also says how much gold you have.</p>
+<p dir="auto">The title names the player you are trading with. A line under the lists says whether each side has accepted or is still waiting. The buttons Accept, Refuse, Offer gold and Offer plat stand at the foot.</p>
+<div class="grid">
+  <figure id="in-progress">
+    <div class="shot"><a href="trade/in-progress.png"><img src="trade/in-progress.png" alt="Trade, in-progress" loading="lazy"></a></div>
+    <figcaption>A trade with four items and 2,500 gold on your side, and three items and 12,000 gold on the other player's side. The other player has accepted and you have not, so the status line reads &quot;Waiting&quot; for you and &quot;Accepted&quot; for them. The two offer buttons are dim, because an offer cannot change once a side has accepted.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The window opens when you start a trade with another player, or when another player starts one with you.</li>
+<li>The window closes when either side refuses, or when both sides have accepted and the trade is done.</li>
+<li>Refuse closes the trade for both players.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Drop an item from your pack or from the ground on the window to put it in your offer. It goes in your list wherever you drop it.</li>
+<li>Click Accept to accept the trade. The button then reads Cancel, and a click on it takes your acceptance back. The trade is done when both sides have accepted.</li>
+<li>Hover over Accept to read the server's warning to check inside every container first.</li>
+<li>Click Refuse to end the trade without trading.</li>
+<li>Click Offer gold, or Offer plat for platinum, to type an amount to offer. An amount above what you have is brought down to what you have. An amount of 0 takes your offer back. After you make an offer, the button shows the amount.</li>
+<li>The two offer buttons do nothing once either side has accepted.</li>
+<li>Double-click an item, on either side, to use it. This opens a bag so that you can look inside before you accept.</li>
+<li>Hover over an item to read its name and its properties.</li>
+<li>Hover over a name that is cut off to read it whole.</li>
+<li>When a side offers more items than fit, a pager under that side's list turns the pages.</li>
+</ul>
+
+</main>
+<footer>Pictures drawn from commit 58ee1920 on 2026-10-16. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

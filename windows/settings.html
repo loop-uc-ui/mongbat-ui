@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User Settings · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>User Settings</h1>
+<p dir="auto">The settings window is where you change how the game and this UI behave. A column of pages stands at the left, and the options of the chosen page stand at the right. Each option is a row with its name and its control: a box to tick, a list to open, a slider, or a button.</p>
+<p dir="auto">Options of the same kind are grouped under a heading. The options you see are the ones this client offers.</p>
+<div class="grid">
+  <figure id="framerate-list">
+    <div class="shot"><a href="settings/framerate-list.png"><img src="settings/framerate-list.png" alt="User Settings, framerate-list" loading="lazy"></a></div>
+    <figcaption>The list that opens under Max Framerate. The rate in force, 60 FPS, is ticked, and a bar stands beside the list because there are more rates than it shows.</figcaption>
+  </figure>
+  <figure id="graphics">
+    <div class="shot"><a href="settings/graphics.png"><img src="settings/graphics.png" alt="User Settings, graphics" loading="lazy"></a></div>
+    <figcaption>The Graphics page, with the screen and frame rate options under Display and the drawing options under Detail. It has lists for the resolution, the frame rate and the particles, and a slider for brightness.</figcaption>
+  </figure>
+  <figure id="input">
+    <div class="shot"><a href="settings/input.png"><img src="settings/input.png" alt="User Settings, input" loading="lazy"></a></div>
+    <figcaption>The Input page. It begins with what the scroll wheel does, then the two buttons for default keys, then every command under a heading, each with the key that runs it or the word Unbound.</figcaption>
+  </figure>
+  <figure id="interface">
+    <div class="shot"><a href="settings/interface.png"><img src="settings/interface.png" alt="User Settings, interface" loading="lazy"></a></div>
+    <figcaption>The Interface page, with the UI scale and the options for this UI's panels under Panels, and three options for single windows under Windows.</figcaption>
+  </figure>
+  <figure id="options">
+    <div class="shot"><a href="settings/options.png"><img src="settings/options.png" alt="User Settings, options" loading="lazy"></a></div>
+    <figcaption>The Options page, which holds game options such as Always Run, Block War on Pets and Legacy Targeting, under the headings Movement, Combat and targeting, Mouse and System.</figcaption>
+  </figure>
+  <figure id="options-foot">
+    <div class="shot"><a href="settings/options-foot.png"><img src="settings/options-foot.png" alt="User Settings, options-foot" loading="lazy"></a></div>
+    <figcaption>The Options page wheeled down to its foot, where Mouse and System end with the language, the disk cache, the journal, Write a log for bug reports and Reset Settings.</figcaption>
+  </figure>
+  <figure id="overhead">
+    <div class="shot"><a href="settings/overhead.png"><img src="settings/overhead.png" alt="User Settings, overhead" loading="lazy"></a></div>
+    <figcaption>The Overhead Text page, with the names shown over people and corpses, the speech shown over heads, and the settings for the handles that name what lies about.</figcaption>
+  </figure>
+  <figure id="sound">
+    <div class="shot"><a href="settings/sound.png"><img src="settings/sound.png" alt="User Settings, sound" loading="lazy"></a></div>
+    <figcaption>The Sound page, with a box to tick and a slider for the master volume, the effects and the music, and a box for footsteps.</figcaption>
+  </figure>
+  <figure id="words">
+    <div class="shot"><a href="settings/words.png"><img src="settings/words.png" alt="User Settings, words" loading="lazy"></a></div>
+    <figcaption>The Filters page, with the obscenity filter and the two ignore lists. Each list has its own switch, with Add By Target and Add From Chat under it, and the people on the list under those.</figcaption>
+  </figure>
+  <figure id="words-recent">
+    <div class="shot"><a href="settings/words-recent.png"><img src="settings/words-recent.png" alt="User Settings, words-recent" loading="lazy"></a></div>
+    <figcaption>The list that opens under Add From Chat, naming the people who spoke in channel chat a little while ago, newest first. A bar stands beside it because there are more names than it shows.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The Settings action, in the Menu Actions group of the Actions window, opens or closes the window. You can put the action on a hotbar.</li>
+<li>On your own paperdoll, click the three dots at the top right and choose Settings.</li>
+<li>The User Settings entry of the main menu opens the window.</li>
+<li>The Filters entry, under Ignore Player in the chat window's menu, opens the window on the Filters page.</li>
+<li>The window opens on the page you left it on. A right-click anywhere on it closes it.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click a page's name in the column at the left to show that page. Its pages are Options, Interface, Graphics, Input, Sound, Overhead Text and Filters.</li>
+<li>Options: movement, combat and targeting, mouse and system options, ending with Reset Settings. Write a log for bug reports, under System, makes the game write logs/lua.log for a bug report while it is on.</li>
+<li>Interface: the UI scale and its Apply button, the panel opacity, window snapping, locking the layout, whether the wheel resizes panels and Reset UI Locs, then options for the party invitation pop-up, other characters' paperdolls, legacy paperdolls and the backpack style.</li>
+<li>Graphics: full screen, resolution, frame rate, v-sync and brightness, then detail and animation options.</li>
+<li>Input: what the scroll wheel does, the two buttons for the default keys, and a key for every command.</li>
+<li>Sound: the master, effects and music volumes, each with a switch, and the footsteps.</li>
+<li>Overhead Text: the names and speech drawn over heads and corpses, and the object handles.</li>
+<li>Filters: the obscenity filter, and the ignore lists for players and for channel chat players.</li>
+<li>Type in the box at the top to find options in every page at once. Each match names its page. Press Escape to empty the box, or click a page to leave the search.</li>
+<li>Click a box to tick or clear it.</li>
+<li>Click a list and pick an entry from the list that opens under it.</li>
+<li>Drag a slider to change its value. Most sliders show the value beside them.</li>
+<li>Click a button, such as Reset or Apply, to run it. Reset Settings, Reset UI Locs and the two buttons for default keys ask first.</li>
+<li>On the Input page, click a command, then press the key you want for it. If the key already runs another command, the window asks before it takes the key away from that command.</li>
+<li>On the Filters page, click Delete beside a person to stop ignoring them.</li>
+<li>Hover over an option to read what it does.</li>
+<li>Roll the mouse wheel over the rows to scroll them.</li>
+<li>Drag the corner grip to resize the window.</li>
+<li>Right-click to close the window.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>Your hotbars, key bindings and settings carry over between this UI and the default UI, both ways.</li><li>Settings come in pages, with a scale for the whole UI.</li><li>For a bug report, turn on Write a log for bug reports in Settings, under System on the Options page. The game then writes logs/lua.log, with every error, until you turn it off.</li></ul>
+</main>
+<footer>Pictures drawn from commit 58ee1920 on 2026-10-16. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

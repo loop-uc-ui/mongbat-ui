@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Key Prompt · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Key Prompt</h1>
+<p dir="auto">The key prompt is a small box near the top of the screen that asks you to press the key you want for an action. It reads: "Please press the keys you wish to bind to this action. Pressing ESCAPE will clear the current binding."</p>
+<p dir="auto">The box has no buttons. It waits for your next key press, and the client records that key for the action that asked.</p>
+<div class="grid">
+  <figure id="hotbar-slot">
+    <div class="shot"><a href="recordkey/hotbar-slot.png"><img src="recordkey/hotbar-slot.png" alt="Key Prompt, hotbar-slot" loading="lazy"></a></div>
+    <figcaption>The prompt after you chose Assign Hotkey from a hotbar slot's menu. It stands at the top of the screen, clear of the bar.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>Shift+right-click a hotbar slot and choose Assign Hotkey.</li>
+<li>Click the key button in the Macros window, when the chosen macro has no key. The button reads No Key Binding. When the macro has a key, a click on the button clears the key instead.</li>
+<li>Click one of the commands in the key settings of the Settings window, then press the key you want.</li>
+<li>The box goes away as soon as you press a key, or when the client cancels the recording.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Press the key that you want for the action, with a modifier such as Control or Alt held if you like.</li>
+<li>The prompt says that pressing Escape clears the action's current key.</li>
+<li>If the key already belongs to a hotbar slot, a macro or a command that this UI can change, a window names the owner and asks whether to move the key. Answer yes to take the key from that owner.</li>
+</ul>
+
+</main>
+<footer>Pictures drawn from commit 58ee1920 on 2026-10-16. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>
