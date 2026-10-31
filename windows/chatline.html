@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chat Line · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Chat Line</h1>
+<p dir="auto">The chat line is the box that you type on to speak, and it stands under the chat window. A mark after the button at its left end names where your next line will go, in the colour of that channel. Your words start right after the mark.</p>
+<p dir="auto">The channel stays the same after you send a line, until you choose another one. Each time you start the game, the line is set to Say.</p>
+<div class="grid">
+  <figure id="friend">
+    <div class="shot"><a href="chatline/friend.png"><img src="chatline/friend.png" alt="Chat Line, friend" loading="lazy"></a></div>
+    <figcaption>The chat line set to write to a friend from Global Chat. The mark is the friend's name in brackets, in the colour of Global Chat, and the words typed go to that friend alone.</figcaption>
+  </figure>
+  <figure id="say">
+    <div class="shot"><a href="chatline/say.png"><img src="chatline/say.png" alt="Chat Line, say" loading="lazy"></a></div>
+    <figcaption>The chat line set to Say, with nothing typed yet. The mark reads [SAY]: in yellow, and the button at the left end opens the chat menu.</figcaption>
+  </figure>
+  <figure id="typed">
+    <div class="shot"><a href="chatline/typed.png"><img src="chatline/typed.png" alt="Chat Line, typed" loading="lazy"></a></div>
+    <figcaption>The chat line with the words &quot;good morning&quot; typed after the mark. The words begin right after the mark on the same line.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The line shows whenever the chat window shows, and it goes away with it.</li>
+<li>The key that starts a line of chat puts the cursor in the line. Pressing it again while you type leaves the line as it is.</li>
+<li>Clicking a friend in the Friends window sets the line to that friend and puts the cursor in it.</li>
+<li>Choosing a channel from Speak on in the chat menu sets the line to that channel and puts the cursor in it.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Type and press Enter to send the line. The box empties after it is sent, and an empty line is not sent.</li>
+<li>Press Escape to empty the box and leave it.</li>
+<li>Start a line with a channel's short word and a space to switch to that channel: /s for Say, /w for Whisper, /p for Party, /g for Guild, /a for Alliance, /e for Emote, /y for Yell, /gm for GM and /c for Chat. The short word is taken off the line.</li>
+<li>Start a line with /x and a space to write to the friend you chose last in the Friends window. It does nothing until you have chosen one.</li>
+<li>Type a command alone on the line and press Enter to open or close a window: /status, /paperdoll, /backpack, /character, /skills, /tracker, /buffs, /partybar, /target, /docks, /map, /waypoints, /mapfind, /legend, /channels, /friends, /macros, /actions, /organizer, /alert, /settings, /help, /store, /guildmenu, /virtues or /quests. A command is not said.</li>
+<li>Type /logout or /exit to log out or leave the game at once. Neither asks first.</li>
+<li>A line to a friend who has left your friends list is not sent. The chat says so in a system line and sets the line back to Say.</li>
+<li>Click the button at the left end to open the chat menu. Its hover tip reads "Chat options". Shift+right-click the line to open the same menu.</li>
+<li>In the menu, Speak on lists Say, Party, Guild, Alliance, Yell and Chat (Channel) with a tick on the one you speak on. Channels and Friends open those windows. Ignore Player lists Add By Target, the people who spoke lately and a Filters entry that opens the word filters in Settings.</li>
+<li>Drag the corner grip at the right end to resize the chat and the line together.</li>
+<li>Drag the line to move the chat window.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.2">v1.0.0-alpha.2</a></h3><ul><li>Type a command alone on the chat line to open or close a window, such as /status, /paperdoll, /backpack, /skills, /map or /settings. A command is not said aloud.</li><li>Type /logout or /exit on the chat line to log out or leave the game at once, without being asked.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>The chat has a menu for channels, Global Chat friends and ignore lists.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

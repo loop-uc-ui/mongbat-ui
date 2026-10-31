@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Macros · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Macros</h1>
+<p dir="auto">The Macros window is where you make and edit your macros. The column on the left lists your macros, and its title says how many you have. The pane on the right shows the macro you chose: its picture and name, its key, whether it repeats, and the actions it runs, in order.</p>
+<p dir="auto">Under the last step stands the next step, dimmed, such as "4. Add a step". That is where the next action goes. When you have no macros, the pane says "No Macros Found" and only the Create button can make the first one.</p>
+<div class="grid">
+  <figure id="empty">
+    <div class="shot"><a href="macros/empty.png"><img src="macros/empty.png" alt="Macros, empty" loading="lazy"></a></div>
+    <figcaption>The window when you have no macros yet. The title reads Macros (0), the pane says No Macros Found, and the Create button at the bottom left is the way to make the first one.</figcaption>
+  </figure>
+  <figure id="five">
+    <div class="shot"><a href="macros/five.png"><img src="macros/five.png" alt="Macros, five" loading="lazy"></a></div>
+    <figcaption>The window with five macros, and the first one, Heal myself, chosen. Its picture and name stand at the top of the right pane. Under them are the key button, the repeat button, and the Rename and Delete buttons. The steps follow, each with a handle to move it, its picture, its number and an X to remove it. Delay steps say how many seconds they wait, and a step that runs only sometimes says when.</figcaption>
+  </figure>
+  <figure id="script">
+    <div class="shot"><a href="macros/script.png"><img src="macros/script.png" alt="Macros, script" loading="lazy"></a></div>
+    <figcaption>The same macro shown as a script, one numbered line to a box, with a comment at the top and the dimmed next line at the bottom. The last line has a mistake, so its number is red, and the line under the script names it: there is no spell &quot;Greater Heel&quot;. The button at the bottom reads Steps, to go back.</figcaption>
+  </figure>
+  <figure id="suggest">
+    <div class="shot"><a href="macros/suggest.png"><img src="macros/suggest.png" alt="Macros, suggest" loading="lazy"></a></div>
+    <figcaption>A line being typed in the script, with a list under it of what may come next: here the properties of self, each with its description. The first is lit, because Tab takes it.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The Macros action, in the Menu Actions group of the Actions window, opens it and closes it again. You can put that action on a hotbar.</li>
+<li>Macros in the main menu opens the window or closes it.</li>
+<li>Macros in the paperdoll's menu opens the window or closes it.</li>
+<li>A right-click closes the window.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click a macro in the left column to choose it.</li>
+<li>Drag a macro from the column onto a hotbar slot to put it there. Hover over a macro to see its name and its key.</li>
+<li>Click Create to make a new macro. It is named Macro with its number, and it is chosen at once.</li>
+<li>Click Run at the bottom to run the chosen macro, as its key or a hotbar slot would.</li>
+<li>Click the macro's picture to choose another picture for it.</li>
+<li>Click the key button to give the macro a key, then press the key. When the macro already has a key, the button shows it, and a click clears it.</li>
+<li>Click the repeat button to turn repeating on or off. The button says which it is now.</li>
+<li>Click Rename to type a new name for the macro.</li>
+<li>Click Delete to remove the macro. A window asks first.</li>
+<li>Click the dimmed next step under the last one to open a list of every action a step can be, in groups: the actions, the skills, the spells of each school, your abilities and items. Click one to add it as the last step. A bandage from Items heals you and lets the macro go on, where Bandage Self ends the macro.</li>
+<li>Drag a spell, a skill, an action or an item onto the dimmed next step to add a step that way. An item can only be added by dragging it.</li>
+<li>Click a step to open its editor, where you change what it does and when it runs. See the Step Editor page.</li>
+<li>Drag an action onto a step to replace it.</li>
+<li>Drag a step by the dotted handle at its left to move it. A line shows where it will land. Its condition moves with it.</li>
+<li>When you drop a Delay step, a box asks for the seconds to wait.</li>
+<li>Click the X at the right of a step to remove it.</li>
+<li>Shift+right-click a step for its menu. It sets what the step aims at, and it has Delete. A step that says something also has Edit Item, to change the words.</li>
+<li>Roll the mouse wheel over the steps or the column to scroll them.</li>
+</ul>
+<h2 dir="auto">The script</h2>
+<ul dir="auto">
+<li>Click Script at the bottom to see the macro as a script, and edit it as text. Click Steps to go back. The window opens on the view you left it on.</li>
+<li>Each line is a step, such as <code class="notranslate">cast "Greater Heal" on self</code>, <code class="notranslate">skill "Meditation"</code>, <code class="notranslate">ability primary</code>, <code class="notranslate">do "Bandage Self"</code>, <code class="notranslate">say "hello"</code> or <code class="notranslate">wait 1.5</code>.</li>
+<li>Add <code class="notranslate">when</code> and a condition to the end of a line to run that step only when the condition holds, such as <code class="notranslate">cast "Greater Heal" on self when self.health &lt; 60%</code> or <code class="notranslate">cast "Energy Bolt" on target when target.isHostile</code>. A line that starts with <code class="notranslate">--</code> is a comment. The Scripting page describes the whole language.</li>
+<li>Each line has its own box, as wide as the window. Click a line to type in it. Under the last line stands the next line, dimmed, which reads "Add a step": type in it to add a step, and a new next line appears under it. Press Enter to go to the line under. Empty the last line and it is the next line again.</li>
+<li>As you type a line, a list under it shows what may come next: an action, a spell or other name, an aim, <code class="notranslate">when</code>, a property of <code class="notranslate">self</code> or <code class="notranslate">target</code>, a comparison, or <code class="notranslate">and</code> and <code class="notranslate">or</code>. Press Tab to take the first, or click any of them. Escape closes the list.</li>
+<li>Drag a line by the dotted handle at its left to move it. Click the X at the end of a line to remove it. Roll the mouse wheel to scroll a long script.</li>
+<li>What you type is saved to the macro as soon as it has no mistakes. While it has one, its line number turns red, the line under the script names the first, and the macro keeps its last working steps. Hover over that line to see every mistake.</li>
+<li>The steps and the script are the same macro. Your comments and layout are kept until the macro is changed in the steps view.</li>
+<li>A macro with a step that a script cannot say, such as an equip set, stays in the steps view, and the chat says which step.</li>
+<li>While an item in a macro's equip set is out of sight, the macro's steps cannot be added, moved or given a condition, and the chat says to open the bag that holds the item.</li>
+<li>Drag the corner grip to resize the window. The window opens at the size you leave it.</li>
+<li>Right-click to close the window.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Fixed the Macros window refusing changes to a macro that has an equip, arm or harvest step.</li><li>Fixed the step list changing the wrong step after the macro moved its steps.</li><li>Fixed a step changed to a bandage losing its aim at you.</li><li>Fixed the script view emptying a Command step's text.</li><li>Fixed an empty border around the pictures in Macros, the Step Editor and the Target window.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.3">v1.0.0-alpha.3</a></h3><ul><li>A macro's step can run only when its tests hold, all of them or any one, such as your health below 60 percent or a buff that is running. Click a step to open it in the step editor, where you change its action, its target and when it runs.</li><li>Add a step opens a list of every action a step can be, with a find box: the actions in their groups, skills, spells by school, abilities and items.</li><li>The Script button shows a macro as a script, one step to a line, such as cast &quot;Greater Heal&quot; on self when self.health &lt; 60%. A test can read you or your current target. The Scripting page of the site lists everything a script can say.</li><li>While you type a script line, a list under it offers what can come next. Tab or a click takes an entry, and Escape closes the list. A buff can be tested by its name as one word, such as self.isBuffDivineFury.</li><li>Drag a step or a script line by the dotted handle at its left to move it. It keeps its condition. Under the last step a dimmed step says Add a step, and a click on it or typing in it adds one.</li><li>Run, at the bottom of the Macros window, runs the chosen macro.</li><li>use &quot;Bandage&quot; on self, also under Items in the Add a step list, bandages you and lets the rest of the macro run. Bandage Self still ends the macro it is in.</li><li>The button that removes a step, a script line or a test now shows a cross, and the button on a shop row that asks how many shows a number sign. Each lights under the pointer and says on hover what it does.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>Macros are edited beside their list.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

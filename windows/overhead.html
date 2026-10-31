@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Names and Speech Over Heads · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Names and Speech Over Heads</h1>
+<p dir="auto">Each creature and player in view has its name over its head, in the colour of its notoriety. When someone speaks, the words appear over the speaker's head, above the name.</p>
+<p dir="auto">Up to three lines of speech stand over one head, with the newest line nearest the name and older lines above it. A line is drawn in the colour the server sends with it. When the server sends none, the line takes the colour of its channel. Say, emote, gesture, whisper and yell appear over a head. Party, guild and the other channels do not.</p>
+<div class="grid">
+  <figure id="name">
+    <div class="shot"><a href="overhead/name.png"><img src="overhead/name.png" alt="Names and Speech Over Heads, name" loading="lazy"></a></div>
+    <figcaption>The name of a creature that came into view and has not spoken. &quot;a mongbat&quot; is in red.</figcaption>
+  </figure>
+  <figure id="own-speech">
+    <div class="shot"><a href="overhead/own-speech.png"><img src="overhead/own-speech.png" alt="Names and Speech Over Heads, own-speech" loading="lazy"></a></div>
+    <figcaption>What you said, &quot;Hail, Mara.&quot;, over your own head. Your own name is not shown, only your words.</figcaption>
+  </figure>
+  <figure id="speech">
+    <div class="shot"><a href="overhead/speech.png"><img src="overhead/speech.png" alt="Names and Speech Over Heads, speech" loading="lazy"></a></div>
+    <figcaption>A character's name in blue with one line of speech above it, &quot;Well met, Aldous!&quot;.</figcaption>
+  </figure>
+  <figure id="two-lines">
+    <div class="shot"><a href="overhead/two-lines.png"><img src="overhead/two-lines.png" alt="Names and Speech Over Heads, two-lines" loading="lazy"></a></div>
+    <figcaption>A character's name in green with two lines of speech above it. The first line has a colour the server chose, and the newer line below it is in the plain colour of speech.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>A name appears when a creature or player comes into view, and it goes away when that one leaves.</li>
+<li>Speech appears over a speaker's head when the speaker talks. The speech fades after a while, and each line fades on its own.</li>
+<li>The Overhead Text page of Settings holds Show Names, Overhead Chat and Overhead Chat Fade Delay. Show Names chooses None, Approaching or All. With Approaching, a name shows for a few seconds and then fades. With All, it stays. With None, it is hidden. Overhead Chat turns speech over heads on or off. Overhead Chat Fade Delay chooses how long a line of speech stays, from 5 sec up to Forever.</li>
+<li>The client's key that flashes all names shows every name for a few seconds, whatever Show Names is set to.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Names and speech have no click action of their own.</li>
+</ul>
+
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

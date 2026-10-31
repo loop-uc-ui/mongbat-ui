@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skills · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Skills</h1>
+<p dir="auto">The skills window lists every skill your character has. Each row shows the skill's picture and name, its real value, the cap it can reach and a bar of how far the value has come toward that cap. A lock at the right end of the row says whether the skill may rise, may fall or is held where it is. The foot of the window shows how many skill points you have used out of the total.</p>
+<p dir="auto">When a skill is raised or lowered by gear or a spell, the change stands beside the value, in green for a gain and red for a loss. A skill with an auto-lock value shows that value in place of its cap, and the bar fills toward it.</p>
+<div class="grid">
+  <figure id="archer">
+    <div class="shot"><a href="skills/archer.png"><img src="skills/archer.png" alt="Skills, archer" loading="lazy"></a></div>
+    <figcaption>The list of an archer in name order. The sort button, the view switch and the menu button stand along the top. Archery is locked, Anatomy is at its cap and the foot gives the points used.</figcaption>
+  </figure>
+  <figure id="auto-lock">
+    <div class="shot"><a href="skills/auto-lock.png"><img src="skills/auto-lock.png" alt="Skills, auto-lock" loading="lazy"></a></div>
+    <figcaption>The list at the narrowest width it can be dragged to. Anatomy and Archery each have an auto-lock value, which shows as &quot;locks at&quot; in place of the cap. Archery also shows what its bracelet adds.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The Skills Window key in the client's key settings opens the window and closes it again.</li>
+<li>The Skills action, in the Menu Actions group of the Actions window, opens or closes it. You can put the action on a hotbar.</li>
+<li>On your own paperdoll, click the three dots at the top right and choose Skills.</li>
+<li>A right-click anywhere on the window closes it.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Type in the Search box under the title to show only the skills whose names match. Press Escape to empty the box.</li>
+<li>Click the sort button to choose an order: by name, by real value, by modded value or by cap, each one upward or downward. The menu ticks the order in force.</li>
+<li>Click the view switch to change between the list and a grid of pictures. The window remembers your choice.</li>
+<li>Click the three dots to set every skill's lock at once: all locked, all up or all down.</li>
+<li>Click a skill's lock to change it. Each click moves it to the next of three states: up, down and locked.</li>
+<li>Double-click a skill to use it, if it is one that can be used.</li>
+<li>Drag a skill onto a hotbar to keep it there.</li>
+<li>Hover over a skill in the list to read what it does. Hover over a skill in the grid to read its name, its real and modded values, its cap, its auto-lock value, its lock and what it does.</li>
+<li>Shift+right-click a skill to open its menu. It sets the skill's lock, sets or clears an auto-lock value, and adds or removes the skill from the skill tracker.</li>
+<li>Roll the mouse wheel over the list to scroll it.</li>
+<li>Drag the window to move it.</li>
+<li>Drag the corner grip to resize the window.</li>
+<li>Right-click to close the window.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Added and, or, not, brackets and quoted phrases to every find box.</li><li>Changed every find box to stand under its window's title, and every place to type to stand on a dark plate.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.3">v1.0.0-alpha.3</a></h3><ul><li>A hover over a skill or a stat says what it is.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>The Skills window has a find box and shows a list or a grid of pictures. A skill can be given an auto-lock value.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

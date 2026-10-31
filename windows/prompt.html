@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Text Prompt · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Text Prompt</h1>
+<p dir="auto">The text prompt is a small window that asks you to type an answer, such as a name or a number. It shows the question, a box for the answer, and the buttons Okay and Cancel under the box. The question also stands in the box as a hint until you type.</p>
+<p dir="auto">The window opens in the middle of the screen. A long question is broken into lines, and the window grows to hold them. Only one prompt is open at a time, and a new question replaces the one before it.</p>
+<div class="grid">
+  <figure id="auto-lock">
+    <div class="shot"><a href="prompt/auto-lock.png"><img src="prompt/auto-lock.png" alt="Text Prompt, auto-lock" loading="lazy"></a></div>
+    <figcaption>The prompt that asks for a skill's auto-lock value. The question names the skill, here Archery, and says the value must lie between 0 and 120. The value 110 is typed.</figcaption>
+  </figure>
+  <figure id="name-a-place">
+    <div class="shot"><a href="prompt/name-a-place.png"><img src="prompt/name-a-place.png" alt="Text Prompt, name-a-place" loading="lazy"></a></div>
+    <figcaption>The prompt that asks for the name of a place you are about to mark on the map, with the name &quot;Old Smithy&quot; typed.</figcaption>
+  </figure>
+  <figure id="rename-a-pet">
+    <div class="shot"><a href="prompt/rename-a-pet.png"><img src="prompt/rename-a-pet.png" alt="Text Prompt, rename-a-pet" loading="lazy"></a></div>
+    <figcaption>The prompt that asks for a new name for a pet, with the pet's current name, &quot;Biscuit&quot;, already in the box.</figcaption>
+  </figure>
+  <figure id="text">
+    <div class="shot"><a href="prompt/text.png"><img src="prompt/text.png" alt="Text Prompt, text" loading="lazy"></a></div>
+    <figcaption>A prompt that asks for the text of a hotbar, with the answer &quot;Healing&quot; typed in the box.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>Choose Set Auto-Lock Value from the menu of a skill in the Skills window. A skill that already has a value shows a Remove choice there instead.</li>
+<li>Choose Rename from the menu of one of your pets.</li>
+<li>Choose a way of marking a place in the map or in the Waypoints window.</li>
+<li>Other windows ask for a name or a number in the same way, for example when you rename a macro.</li>
+<li>The prompt closes when you click Okay or Cancel, or press Enter or Escape in the box. An answer that is refused, as described below, keeps it open.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Type your answer in the box. The box has the keyboard focus when the prompt opens.</li>
+<li>Click Okay, or press Enter, to send the answer. The prompt closes.</li>
+<li>Click Cancel, or press Escape, to close the prompt without an answer.</li>
+<li>When the question wants a number, an answer that is not a number keeps the prompt open and puts the starting value back. A count must be 1 or more.</li>
+<li>When the question wants a value between two numbers, a number past one end is pulled back to that end.</li>
+<li>Drag the window by its background to move it.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Changed every find box to stand under its window's title, and every place to type to stand on a dark plate.</li><li>Changed a dialog's buttons to stand at the lower right, with the button that agrees on the right.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

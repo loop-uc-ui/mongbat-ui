@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotbar · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Hotbar</h1>
+<p dir="auto">A hotbar holds actions that you use with a click or a key, such as spells, skills, items, macros and the shortcuts to this UI's windows. Each slot shows its action's picture and the key bound to it, even when the slot is empty.</p>
+<p dir="auto">A slot that holds an item shows how many of that item you carry, and its picture fades when you have none. While a spell is being cast, its slot is tinted red. After you use a potion or a bandage, the seconds until you can use it again count down over its slot.</p>
+<div class="grid">
+  <figure id="archer">
+    <div class="shot"><a href="hotbar/archer.png"><img src="hotbar/archer.png" alt="Hotbar, archer" loading="lazy"></a></div>
+    <figcaption>A full bar of twelve slots with keys on some of them. It holds bandages, spells, skills, a weapon move, a macro and a line of speech.</figcaption>
+  </figure>
+  <figure id="first-bar">
+    <div class="shot"><a href="hotbar/first-bar.png"><img src="hotbar/first-bar.png" alt="Hotbar, first-bar" loading="lazy"></a></div>
+    <figcaption>The empty bar that every character starts with. Its slots have the keys F1 to F12.</figcaption>
+  </figure>
+  <figure id="in-use">
+    <div class="shot"><a href="hotbar/in-use.png"><img src="hotbar/in-use.png" alt="Hotbar, in-use" loading="lazy"></a></div>
+    <figcaption>A bar in a fight. The slot of the spell being cast is tinted red, and a heal potion counts down the seconds until it can be used again. The bandage slot fades because none are left.</figcaption>
+  </figure>
+  <figure id="new-character">
+    <div class="shot"><a href="hotbar/new-character.png"><img src="hotbar/new-character.png" alt="Hotbar, new-character" loading="lazy"></a></div>
+    <figcaption>The bar of shortcuts that this UI makes for a new character. It opens the paperdoll, the backpack, the skills list and the other windows.</figcaption>
+  </figure>
+  <figure id="one-button">
+    <div class="shot"><a href="hotbar/one-button.png"><img src="hotbar/one-button.png" alt="Hotbar, one-button" loading="lazy"></a></div>
+    <figcaption>A bar of a single slot, holding one spell.</figcaption>
+  </figure>
+  <figure id="pet-commands">
+    <div class="shot"><a href="hotbar/pet-commands.png"><img src="hotbar/pet-commands.png" alt="Hotbar, pet-commands" loading="lazy"></a></div>
+    <figcaption>A bar with eight pet commands, each with its key, and four empty slots.</figcaption>
+  </figure>
+  <figure id="shortcuts">
+    <div class="shot"><a href="hotbar/shortcuts.png"><img src="hotbar/shortcuts.png" alt="Hotbar, shortcuts" loading="lazy"></a></div>
+    <figcaption>A bar of shortcuts to this UI's windows, two of them with keys.</figcaption>
+  </figure>
+  <figure id="six-across">
+    <div class="shot"><a href="hotbar/six-across.png"><img src="hotbar/six-across.png" alt="Hotbar, six-across" loading="lazy"></a></div>
+    <figcaption>A bar six slots wide, so that half of its twelve actions show.</figcaption>
+  </figure>
+  <figure id="stock-menu-bar">
+    <div class="shot"><a href="hotbar/stock-menu-bar.png"><img src="hotbar/stock-menu-bar.png" alt="Hotbar, stock-menu-bar" loading="lazy"></a></div>
+    <figcaption>The default UI's bar of window buttons, kept as it was when you switched to this UI.</figcaption>
+  </figure>
+  <figure id="three-upright">
+    <div class="shot"><a href="hotbar/three-upright.png"><img src="hotbar/three-upright.png" alt="Hotbar, three-upright" loading="lazy"></a></div>
+    <figcaption>A bar stood on end, with three slots that run downward.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>Every hotbar your character has opens when you log in, including the bars the default UI made.</li>
+<li>A new character also gets a bar of shortcuts to this UI's windows, such as the paperdoll, the backpack and the skills list. A character that already has the default UI's bar of window buttons does not get this bar.</li>
+<li>Shift+right-click the edge of a bar and choose New Hotbar to add a bar.</li>
+<li>Shift+right-click the edge of a bar and choose Destroy Hotbar to remove that bar. It asks first. The first bar cannot be removed.</li>
+<li>A right-click does not close a hotbar, so that a missed click in a fight cannot lose your bar.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click a slot, or press its key, to use its action.</li>
+<li>Drop an action or an item on a slot to put it there. If something is already on the cursor, a click on a slot drops it there instead of using the slot.</li>
+<li>Drag an action from one slot to another to move it.</li>
+<li>Drag an empty slot to move the whole bar. With the Lock the layout setting on, neither the bar nor its slots can be dragged.</li>
+<li>Hover over a slot to see the action's name, with its key and what it aims at. An item also shows its properties.</li>
+<li>Hover over the edge of a bar to see the bar's name, once you have given it one.</li>
+<li>Shift+right-click a slot for its menu. From there you can assign a hotkey, clear the hotkey, clear the item and choose what the action aims at. Some slots also offer a spell's form, a macro's repeat, or Edit Item.</li>
+<li>Shift+right-click the edge of a bar for the bar's menu. Set Text names the bar, Change Handle Color colours its edge, Slots sets how many slots it shows, and Upright stands it on end.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.3">v1.0.0-alpha.3</a></h3><ul><li>A hotbar slot that uses an item by its type, such as a potion, shows its countdown when the item is used another way, and a hued item's slot shows its countdown too.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>Your hotbars, key bindings and settings carry over between this UI and the default UI, both ways.</li><li>Hotbars are moved by dragging an empty slot. A slot shows how many of an item you carry, and counts down the wait after a potion or a bandage.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

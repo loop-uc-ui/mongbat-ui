@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Book</h1>
+<p dir="auto">The book window is where you read a book, and where you write in one that is yours. It shows the book's title and author, two facing pages of text, and the page numbers at the foot. Buttons at the foot turn the pages.</p>
+<p dir="auto">The book opens on its title page, with page one facing it. After that, each turn moves two pages.</p>
+<div class="grid">
+  <figure id="reading">
+    <div class="shot"><a href="book/reading.png"><img src="book/reading.png" alt="Book, reading" loading="lazy"></a></div>
+    <figcaption>A book that someone wrote, open at its second spread, with a page of text on each side. The foot reads &quot;pages 2-3 of 6&quot;. The Previous and Next buttons turn the pages. The book is not yours to write in, so it has no Edit button.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>Double-click a book in your backpack, or in any container or on the ground, and the server opens it.</li>
+<li>A right-click anywhere on the window closes it. If you were writing, the spread you have on screen is sent to the server first.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click Next to turn to the next two pages. The button disappears at the end of the book.</li>
+<li>Click Previous to go back two pages. The button disappears on the title page.</li>
+<li>Click Edit, in a book that is yours to write in, to type on the pages. Click Okay to send what you wrote.</li>
+<li>While you write, click a page and type. On the title page you can also change the title.</li>
+<li>Turn a page, or close the book, to send what you wrote on the spread you are leaving.</li>
+<li>Right-click to close the window.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Changed every find box to stand under its window's title, and every place to type to stand on a dark plate.</li><li>Fixed a book's new title going back to the old one at the next save.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

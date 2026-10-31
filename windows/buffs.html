@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buffs · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Buffs</h1>
+<p dir="auto">The buff bar lists the buffs and debuffs that are running on your character, such as Bless, Curse or Night Sight. Each row shows the effect's picture and name. If the effect runs for a set time, the time left stands at the right end of the row.</p>
+<p dir="auto">The bar grows to hold every effect and gets shorter as effects end. A time under a minute counts in seconds, a longer one in minutes, and a very long one in hours. A mark of "&gt;" before a number means that the time left is a little more than it says. In its last ten seconds an effect's picture pulses.</p>
+<div class="grid">
+  <figure id="six">
+    <div class="shot"><a href="buffs/six.png"><img src="buffs/six.png" alt="Buffs, six" loading="lazy"></a></div>
+    <figcaption>The bar with six effects running. Bless, Protection, Curse and Weaken count down, while Night Sight and Meditating have no time shown.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The Buffs action, in the Menu Actions group of the Actions window, opens or closes the bar. You can put the action on a hotbar.</li>
+<li>On your own paperdoll, click the three dots at the top right and choose Buffs.</li>
+<li>If the bar was open when you logged out, it opens again when you log in.</li>
+<li>A right-click anywhere on the window closes it.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Hover over an effect to read its name and what it does.</li>
+<li>Drag the bar to move it.</li>
+<li>Right-click to close the bar.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Fixed the buff bar losing every buff when the UI is reloaded.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>The buff bar lists your buffs and debuffs, with the time left on each.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

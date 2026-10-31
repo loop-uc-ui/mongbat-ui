@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equipment Positions · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Equipment Positions</h1>
+<p dir="auto">The equipment positions window picks which parts of your body a hotbar slot's equipment action works on. It lists the positions, such as Head Armor, Right Hand, Left Hand, Hand Armor and Talisman, with a mark beside each one that the slot uses.</p>
+<p dir="auto">The window has two modes. For a slot that holds an arm or disarm action, the window is titled Slot, and the chosen position wears a tick. For a slot that holds an unequip action, the window is titled Unequip Items, and every position that the slot takes off wears a checkbox.</p>
+<div class="grid">
+  <figure id="unequip">
+    <div class="shot"><a href="actionedit/unequip.png"><img src="actionedit/unequip.png" alt="Equipment Positions, unequip" loading="lazy"></a></div>
+    <figcaption>The window open on a slot that takes off the right hand, the left hand, the helm and the gloves. The title reads Unequip Items, and Head Armor, Right Hand, Left Hand and Hand Armor are checked. The list is longer than the window, so a bar at the right edge shows that it scrolls.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>Shift+right-click a hotbar slot that holds an arm or disarm action, or an unequip action, and choose Edit Item.</li>
+<li>Choosing Edit Item on another slot while the window is open moves the window to that slot. If the other slot holds the other kind of action, the window changes its title and its marks to fit.</li>
+<li>A right-click closes the window.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>In the Slot mode, click a position to make it the slot's choice. The tick moves to that row.</li>
+<li>In the Unequip Items mode, click a position to add it to the set that the slot takes off. Click a checked position to take it out again.</li>
+<li>Roll the mouse wheel over the list to scroll it.</li>
+<li>Drag the window to move it. Drag the corner grip to resize it. With the Lock the layout setting on, the window cannot be dragged.</li>
+<li>Right-click to close the window.</li>
+</ul>
+
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

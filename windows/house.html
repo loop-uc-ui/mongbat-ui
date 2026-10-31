@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>House Customization · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>House Customization</h1>
+<p dir="auto">The House Customization window is the designer that opens while you edit a house. It lists the walls, doors, floors, stairs, roofs, teleporters and other pieces that you can build with, and you choose a piece here before you place it in the world.</p>
+<p dir="auto">Each tab holds one kind of piece. Under it, each category has a heading, with the pieces of that category in rows below. A category you may look at but not build from has its heading in red, and a piece in it explains why when you click it. The foot of the window shows how many components and fixtures the design holds, with the most it may hold, and what the design costs.</p>
+<div class="grid">
+  <figure id="walls">
+    <div class="shot"><a href="house/walls.png"><img src="house/walls.png" alt="House Customization, walls" loading="lazy"></a></div>
+    <figcaption>The Walls tab. The first category is red, because the account cannot build from it. The foot reads the design's components, fixtures and cost on the left, with the buttons for the whole design on the right.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The window opens when you start customizing a house.</li>
+<li>Right-click an empty part of the window to close it and end the editing.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click a tab to see that kind of piece.</li>
+<li>Shift+right-click a tab for its menu. Choose Extract to take that tab out into a window of its own, and Re-Integrate to put it back. Extract is greyed out for the last tab in the row.</li>
+<li>Click a piece to choose it, and then click in the world to place it. A frame marks the chosen piece.</li>
+<li>Click Erase, and then click in the world, to remove a piece.</li>
+<li>Click Eyedropper Tool, and then click a piece in the world, to choose that piece. The list scrolls to it.</li>
+<li>Click a storey number at the top right to build on that storey. Hover over the number to read its name.</li>
+<li>Click the Story Visibility button, which names the storey you build on, such as Story 1 Visibility. Choose Walls, Floors or Roofs, and then Show, Transparent or Hide, to set how that kind of piece draws on that storey.</li>
+<li>Click + or - beside Roof to set the height of a roof. These appear when the Roofs tab is showing or a roof piece is chosen.</li>
+<li>The foot has five buttons that each send one command for the whole design. They read Backup, Restore, Sync, Clear and Revert in capital letters. Hover over one, or over Commit, to read what it does to the design. Hover over the roof's + and − buttons, the visibility menu or the Fixtures reading to read what they mean.</li>
+<li>Click COMMIT to build the design. If the design is not sound, a message says so.</li>
+<li>A count in the foot turns red when the design has reached its limit.</li>
+<li>Roll the mouse wheel over the pieces to scroll them.</li>
+<li>Drag the window to move it. Drag the corner grip to resize it. The size is remembered.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.3">v1.0.0-alpha.3</a></h3><ul><li>The house editor's buttons say on hover what they do: Backup, Restore, Sync, Clear, Revert, Commit, the roof level buttons, Visibility Options and Fixtures.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

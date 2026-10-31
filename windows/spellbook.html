@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spellbook · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Spellbook</h1>
+<p dir="auto">A spellbook window shows the spells of one book, such as a book of Magery, Necromancy or Chivalry. Each row shows the spell's picture and name and what it costs to cast, such as the skill it needs and its mana. A book of Chivalry also shows tithing points, and the foot of the book shows how many tithing points you have.</p>
+<p dir="auto">A spell that the book does not hold yet is faded, and it cannot be cast or picked up.</p>
+<div class="grid">
+  <figure id="chivalry">
+    <div class="shot"><a href="spellbook/chivalry.png"><img src="spellbook/chivalry.png" alt="Spellbook, chivalry" loading="lazy"></a></div>
+    <figcaption>A book of Chivalry. Each row names three costs: skill, mana and tithing. Enemy of One and Noble Sacrifice are not learned yet, so their rows are faded, and your tithing points stand at the foot of the book.</figcaption>
+  </figure>
+  <figure id="grid">
+    <div class="shot"><a href="spellbook/grid.png"><img src="spellbook/grid.png" alt="Spellbook, grid" loading="lazy"></a></div>
+    <figcaption>A book of Magery in its grid view, which shows each spell as a picture alone, in name order. The spells the book does not hold are faded.</figcaption>
+  </figure>
+  <figure id="list">
+    <div class="shot"><a href="spellbook/list.png"><img src="spellbook/list.png" alt="Spellbook, list" loading="lazy"></a></div>
+    <figcaption>A book of Magery in its list view, with the spells in name order. Spells of the higher circles that the book does not hold have faded pictures and names.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>Double-click a spellbook to open it. The window opens beside the pointer.</li>
+<li>A right-click anywhere on the window closes it.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Type in the Search box under the title to show only the spells whose names match. Press Escape to empty the box.</li>
+<li>Click the sort button to choose an order: by name, or by the costs the book shows, such as skill, mana or tithing. Each order runs upward or downward, and the book remembers your choice. A book of masteries has no sort button.</li>
+<li>Click the view switch to change between the list and a grid of pictures. The book remembers your choice.</li>
+<li>Double-click a spell to cast it.</li>
+<li>Drag a spell onto a hotbar to keep it there.</li>
+<li>Hover over a spell to read what it does and what reagents it needs.</li>
+<li>Roll the mouse wheel over the list to scroll it.</li>
+<li>Drag the corner grip to resize the window.</li>
+<li>Right-click to close the window.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Added and, or, not, brackets and quoted phrases to every find box.</li><li>Changed every find box to stand under its window's title, and every place to type to stand on a dark plate.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>Spellbooks have a find box and show a list or a grid of pictures. A book of masteries groups its spells by skill.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

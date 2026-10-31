@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Distance Counter · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Distance Counter</h1>
+<p dir="auto">The distance counter shows how many tiles away the place under your pointer is, while the game waits for you to choose a target. It stands just below and to the right of the pointer, on a small plate, and it counts tiles the way the game counts range: the larger of the steps east or west and the steps north or south.</p>
+<p dir="auto">Over a creature it shows the game's own distance to that creature. Over the ground it works the distance out from where the pointer stands, and it follows the camera's zoom.</p>
+<div class="grid">
+  <figure id="ground">
+    <div class="shot"><a href="distance/ground.png"><img src="distance/ground.png" alt="Distance Counter, ground" loading="lazy"></a></div>
+    <figcaption>The counter beside the pointer, three tiles from you over open ground.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The counter appears by itself whenever a spell, a skill or an item asks you to choose a target, and the pointer is over the world.</li>
+<li>It goes away when you choose the target or cancel it, and while the pointer is outside the world's frame.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>The counter takes no clicks. A click goes to whatever is under it.</li>
+<li>The game does not tell the UI how far the camera is zoomed. The counter reads it from where the game draws a point that it pins over your character, so the count follows the zoom as you change it. Each creature you point at checks that reading.</li>
+<li>Over the ground the count assumes level ground. A hill or a roof can put it a tile out. Over a creature the count is always exact.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Added a count of tiles beside the pointer while you target.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

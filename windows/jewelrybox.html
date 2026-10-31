@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jewelry Box · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Jewelry Box</h1>
+<p dir="auto">The Jewelry Box window shows every piece in a jewelry box at once, in place of the box's own pages of fifty. The pieces stand under a heading for each kind: rings, bracelets, earrings, necklaces and talismans. A Search box under the title narrows them by their properties.</p>
+<p dir="auto">The box sends its pieces a page at a time, so the window reads every page when it opens, and again when the box changes. The box does not send what a piece looks like, so each piece is drawn with the plain picture of its kind. Hover over a piece to see what it is.</p>
+<div class="grid">
+  <figure id="grid">
+    <div class="shot"><a href="jewelrybox/grid.png"><img src="jewelrybox/grid.png" alt="Jewelry Box, grid" loading="lazy"></a></div>
+    <figcaption>A box of sixty pieces, each a picture under the heading of its kind. The title gives the box's name and how many pieces it holds.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>Double-click a jewelry box to open the window in place of the box's own dialog.</li>
+<li>Close the window with a right-click, or walk away from the box.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Hover over a piece to see its name and properties.</li>
+<li>Click a piece to take it out to your backpack.</li>
+<li>Type in the find box to show only the pieces that match, as a bag's find box does. A kind's name finds its pieces, so "ring fire" finds the rings with fire on them. Press Escape to empty the box.</li>
+<li>Click the plus to add jewelry, then click each piece to add. Press Escape when you are done.</li>
+<li>Drag a piece from your backpack onto the window to add it.</li>
+<li>Click the button beside the find box to switch between the grid and a list with names. The window remembers your choice.</li>
+<li>Roll the mouse wheel to scroll the window, and drag the corner grip to resize it.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Added a Jewelry Box window that shows every piece at once, grouped by kind, with a find box.</li><li>Added taking a piece out of the Jewelry Box by clicking it, adding jewelry with the plus, and adding a piece by dragging it onto the window.</li><li>Added and, or, not, brackets and quoted phrases to every find box.</li><li>Changed every find box to stand under its window's title, and every place to type to stand on a dark plate.</li><li>Fixed the Jewelry Box giving up on every box after the server left one press unanswered.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

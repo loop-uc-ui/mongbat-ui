@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Releases · mongbat-ui</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="index.html">mongbat-ui</a>
+  <a href="index.html">Home</a>
+  <a href="windows/index.html">Windows</a>
+  <a href="scripting.html">Scripting</a>
+  <a href="releases.html" aria-current="page">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<h1>Releases</h1>
+<p class="lead">Each release, newest first, with what changed in it. The <a href="index.html#install">install steps</a> say what to do with the zip file.</p>
+<div id="releases"><p>Reading the releases from GitHub…</p></div>
+<script>
+(async () => {
+  const list = document.getElementById("releases");
+  const fallback = '<p>The releases could not be read. They are on <a href="https://github.com/loop-uc-ui/mongbat-ui/releases">GitHub</a>.</p>';
+  const text = (value) => { const span = document.createElement("span"); span.textContent = value; return span.innerHTML; };
+  try {
+    const answer = await fetch("https://api.github.com/repos/loop-uc-ui/mongbat-ui/releases?per_page=100",
+      { headers: { Accept: "application/vnd.github.html+json" } });
+    if (!answer.ok) { list.innerHTML = fallback; return; }
+    const releases = (await answer.json()).filter((each) => !each.draft);
+    if (releases.length === 0) { list.innerHTML = "<p>There is no release yet.</p>"; return; }
+    list.innerHTML = releases.map((each) => {
+      const zip = each.assets.find((asset) => asset.name.endsWith(".zip"));
+      const date = (each.published_at || "").slice(0, 10);
+      return '<section class="release" id="' + text(each.tag_name) + '">'
+        + '<h2>' + text(each.name || each.tag_name) + (each.prerelease ? '<span class="tag">pre-release</span>' : '') + '</h2>'
+        + '<p class="lead">' + text(date)
+        + (zip ? ' · <a href="' + text(zip.browser_download_url) + '">' + text(zip.name) + '</a>' : '')
+        + ' · <a href="' + text(each.html_url) + '">on GitHub</a></p>'
+        + (each.body_html || '') + '</section>';
+    }).join("");
+  } catch {
+    list.innerHTML = fallback;
+  }
+})();
+</script>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

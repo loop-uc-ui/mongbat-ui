@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Map · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Map</h1>
+<p dir="auto">The map shows the world around you. It draws the land as a picture with markers on it for towns, shrines, moongates, healers, your own waypoints and other places. The title names the world, and the area as well when you look at one area of it. The foot shows your position as a sextant reading, and the position as numbers at its right end.</p>
+<p dir="auto">The map opens on your own position and follows you as you walk. A button with three dots at the top right opens the map's menu.</p>
+<div class="grid">
+  <figure id="cove">
+    <div class="shot"><a href="map/cove.png"><img src="map/cove.png" alt="Map, cove" loading="lazy"></a></div>
+    <figcaption>The map of Felucca at the size it opens at, centred on a player who stands in Cove. Markers for towns, shrines, moongates, a healer and the town's shops stand among the streets. The foot shows the sextant reading on the left and the numbers on the right.</figcaption>
+  </figure>
+  <figure id="large">
+    <div class="shot"><a href="map/large.png"><img src="map/large.png" alt="Map, large" loading="lazy"></a></div>
+    <figcaption>The map dragged to its largest size. More of the town's markers are in view.</figcaption>
+  </figure>
+  <figure id="small">
+    <div class="shot"><a href="map/small.png"><img src="map/small.png" alt="Map, small" loading="lazy"></a></div>
+    <figcaption>The map dragged to its smallest size. The foot has room for the sextant reading only, so the numbers are left out.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The Toggle Map key in the client's key settings opens the map, and closes it again.</li>
+<li>The Atlas action, in the Menu Actions group of the Actions window, does the same. You can put the action on a hotbar.</li>
+<li>The map opens again at the next login when you left it open.</li>
+<li>A right-click on the map closes it.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Drag the picture to move the view. Dragging stops the map from following you. It follows you again when you tick Center on Player in the map's menu, or the next time you open the map.</li>
+<li>Roll the mouse wheel over the map to zoom in and out.</li>
+<li>Double-click a place on the map, or on a marker, to centre the map there.</li>
+<li>Hover over a marker to read its name and its sextant reading.</li>
+<li>Move the pointer over the map to see the position under it at the foot.</li>
+<li>Click the three dots, or Shift+right-click the window outside the picture, to open the map's menu. It has Center on Player and Tilt Map, which show a tick when they are on, then Zoom In and Zoom Out. After them come Worlds and, where the world has named areas, Areas. Each lists its choices with a tick on the one you are viewing. Find a place, Waypoints and Legend follow, and each opens its window.</li>
+<li>Shift+right-click a place on the picture to open the same menu with two entries added at the top: Create Waypoint Here, which asks for a name and marks the place, and Center Here.</li>
+<li>Shift+right-click a waypoint that you made to rename it, change its picture, change its size or delete it. On any other marker, Shift+right-click opens the menu of the spot where it stands.</li>
+<li>Drag the corner grip to make the map larger or smaller. The map opens at the size you leave it.</li>
+<li>Right-click to close the map.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Fixed renaming a map marker leaving a copy when the map changed world meanwhile, or removing the marker when the new one was refused.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>The map lists only your own waypoints, and has a find box and a legend.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

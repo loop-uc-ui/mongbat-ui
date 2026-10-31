@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scripting · mongbat-ui</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="index.html">mongbat-ui</a>
+  <a href="index.html">Home</a>
+  <a href="windows/index.html">Windows</a>
+  <a href="scripting.html" aria-current="page">Scripting</a>
+  <a href="releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main><h1 dir="auto">Macro scripts</h1>
+<p dir="auto">Click <strong>Script</strong> in the Macros window to write a macro as text. Each line is one step.</p>
+<pre class="notranslate"><code class="notranslate">-- Heal, cure and fight
+cast "Greater Heal" on self when self.health &lt; 60%
+cast "Cure" on target when target.isPoisoned and target.distance &lt;= 10
+cast "Energy Bolt" on target when target.isHostile
+wait 1.5
+say "Next!"
+</code></pre>
+<ul dir="auto">
+<li><code class="notranslate">--</code> starts a comment.</li>
+<li>Case doesn't matter.</li>
+<li>As you type, a list offers what can come next. Tab or a click takes it.</li>
+</ul>
+<h2 dir="auto">Actions</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Action</th>
+<th>Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="notranslate">cast "Spell"</code></td>
+<td>Casts a spell.</td>
+</tr>
+<tr>
+<td><code class="notranslate">skill "Skill"</code></td>
+<td>Uses a skill.</td>
+</tr>
+<tr>
+<td><code class="notranslate">ability primary</code></td>
+<td>Uses your weapon's primary ability.</td>
+</tr>
+<tr>
+<td><code class="notranslate">ability secondary</code></td>
+<td>Uses your weapon's secondary ability.</td>
+</tr>
+<tr>
+<td><code class="notranslate">ability "Ability"</code></td>
+<td>Uses a racial ability, such as <code class="notranslate">"Stone Form"</code>.</td>
+</tr>
+<tr>
+<td><code class="notranslate">do "Action"</code></td>
+<td>Does an action from the Add a step list, such as <code class="notranslate">"Toggle War Mode"</code>.</td>
+</tr>
+<tr>
+<td><code class="notranslate">use "Item"</code></td>
+<td>Uses an item from your pack. For now only <code class="notranslate">"Bandage"</code>.</td>
+</tr>
+<tr>
+<td><code class="notranslate">say "words"</code></td>
+<td>Says the words. Also <code class="notranslate">emote</code>, <code class="notranslate">whisper</code> and <code class="notranslate">yell</code>.</td>
+</tr>
+<tr>
+<td><code class="notranslate">wait seconds</code></td>
+<td>Waits, such as <code class="notranslate">wait 1.5</code>.</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p dir="auto">Add <code class="notranslate">on self</code>, <code class="notranslate">on target</code> or <code class="notranslate">on cursor</code> to aim <code class="notranslate">cast</code>, <code class="notranslate">skill</code>, <code class="notranslate">do</code> or <code class="notranslate">use</code>.</p>
+<h2 dir="auto">Conditions</h2>
+<p dir="auto">Add <code class="notranslate">when</code> and a condition to run a step only sometimes.</p>
+<pre class="notranslate"><code class="notranslate">cast "Greater Heal" on self when self.health &lt; 60%
+cast "Cure" on self when self.isPoisoned and not self.isHidden
+cast "Heal" on target when (target.isFriend or target.isPartyMember) and target.health &lt; 50%
+</code></pre>
+<ul dir="auto">
+<li>Compare numbers with <code class="notranslate">&lt;</code> <code class="notranslate">&lt;=</code> <code class="notranslate">=</code> <code class="notranslate">!=</code> <code class="notranslate">&gt;=</code> <code class="notranslate">&gt;</code>.</li>
+<li><code class="notranslate">%</code> means a share of the maximum: <code class="notranslate">self.health &lt; 60%</code>.</li>
+<li>Join tests with <code class="notranslate">and</code>, <code class="notranslate">or</code>, <code class="notranslate">not</code> and brackets.</li>
+<li>A step whose condition fails is skipped.</li>
+<li>With no target, every <code class="notranslate">target</code> test fails, except <code class="notranslate">not target.exists</code>.</li>
+</ul>
+<h2 dir="auto">self</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Number</th>
+<th><code class="notranslate">%</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="notranslate">self.health</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code class="notranslate">self.mana</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code class="notranslate">self.stamina</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code class="notranslate">self.str</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code class="notranslate">self.dex</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code class="notranslate">self.int</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code class="notranslate">self.weight</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code class="notranslate">self.followers</code></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code class="notranslate">self.luck</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code class="notranslate">self.skill("Skill")</code></td>
+<td>Yes, of the skill's cap</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Yes or no</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="notranslate">self.isPoisoned</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code class="notranslate">self.isCursed</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code class="notranslate">self.isParalyzed</code></td>
+<td>Needs the shard to send the buff.</td>
+</tr>
+<tr>
+<td><code class="notranslate">self.isHidden</code></td>
+<td>Needs the shard to send the buff.</td>
+</tr>
+<tr>
+<td><code class="notranslate">self.isOverweight</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code class="notranslate">self.isWarMode</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code class="notranslate">self.hasBuff("Buff")</code></td>
+<td>A buff or debuff by its buff bar name.</td>
+</tr>
+<tr>
+<td><code class="notranslate">self.isBuff...</code></td>
+<td>The same, as one word: <code class="notranslate">self.isBuffDivineFury</code>.</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h2 dir="auto">target</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Number</th>
+<th><code class="notranslate">%</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="notranslate">target.health</code></td>
+<td>Only</td>
+</tr>
+<tr>
+<td><code class="notranslate">target.distance</code></td>
+<td></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Yes or no</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="notranslate">target.exists</code></td>
+<td>You have a target.</td>
+</tr>
+<tr>
+<td><code class="notranslate">target.isMobile</code></td>
+<td>A creature or a person.</td>
+</tr>
+<tr>
+<td><code class="notranslate">target.isPoisoned</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code class="notranslate">target.isCursed</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code class="notranslate">target.isDead</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code class="notranslate">target.isPartyMember</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code class="notranslate">target.isPet</code></td>
+<td>Your pet.</td>
+</tr>
+<tr>
+<td><code class="notranslate">target.isInnocent</code></td>
+<td>Blue.</td>
+</tr>
+<tr>
+<td><code class="notranslate">target.isFriend</code></td>
+<td>Green.</td>
+</tr>
+<tr>
+<td><code class="notranslate">target.isAttackable</code></td>
+<td>Grey.</td>
+</tr>
+<tr>
+<td><code class="notranslate">target.isCriminal</code></td>
+<td>Grey.</td>
+</tr>
+<tr>
+<td><code class="notranslate">target.isEnemy</code></td>
+<td>Orange.</td>
+</tr>
+<tr>
+<td><code class="notranslate">target.isMurderer</code></td>
+<td>Red.</td>
+</tr>
+<tr>
+<td><code class="notranslate">target.isInvulnerable</code></td>
+<td>Yellow.</td>
+</tr>
+<tr>
+<td><code class="notranslate">target.isHostile</code></td>
+<td>Grey, orange or red.</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h2 dir="auto">Tips</h2>
+<ul dir="auto">
+<li>Use <code class="notranslate">use "Bandage" on self</code>, not <code class="notranslate">do "Bandage Self"</code>. Bandage Self ends the macro.</li>
+<li>A line with a mistake turns red, and the line under the script says what's wrong. The<br>
+macro keeps its last working steps until you fix it.</li>
+<li>Some steps, such as an equipment set, can't be written as a line. A macro with one stays<br>
+in the steps view.</li>
+</ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waypoints · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Waypoints</h1>
+<p dir="auto">The waypoints window lists the places that you marked on the map, in the world that the map shows. Each row shows the marker's picture, its name and its sextant reading. The title names the world and counts the waypoints.</p>
+<p dir="auto">Only the waypoints that you made have rows. The towns, shrines and other places that the map draws for you are not in the list, and neither are a corpse or a party member.</p>
+<div class="grid">
+  <figure id="felucca">
+    <div class="shot"><a href="waypoints/felucca.png"><img src="waypoints/felucca.png" alt="Waypoints, felucca" loading="lazy"></a></div>
+    <figcaption>The waypoints that you made on Felucca, seven of them, each with its own picture, name and reading. The button at the foot marks the spot where you stand.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The Waypoints item in the map's menu opens the list. The map's menu opens from the three dots on the map.</li>
+<li>The Waypoints action, in the Menu Actions group of the Actions window, opens and closes it. You can put the action on a hotbar.</li>
+<li>A right-click on the window closes it.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click a row to move the map to that waypoint. The map stops following you and shows the waypoint's world.</li>
+<li>Hover over a row to read the waypoint's name and numbers, and what a click and a shift+right-click do.</li>
+<li>Shift+right-click a row to open a menu for it. The menu renames the waypoint, changes its picture, changes its size on the map, or deletes it.</li>
+<li>Click Create Waypoint Here to mark the spot where you stand. A prompt asks for the name.</li>
+<li>Shift+right-click Create Waypoint Here to open a menu with Create. It asks for a sextant reading or a pair of map numbers, then for a name, and marks that place. When a reading could be in either Trammel or Felucca, a menu asks which.</li>
+<li>Reading a message in a bottle that names a place offers to mark the wreck in Trammel or in Felucca.</li>
+<li>Roll the mouse wheel over the list to scroll it.</li>
+<li>Drag the corner grip to make the window larger or smaller.</li>
+<li>Right-click to close the window.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Fixed renaming a map marker leaving a copy when the map changed world meanwhile, or removing the marker when the new one was refused.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>The map lists only your own waypoints, and has a find box and a legend.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

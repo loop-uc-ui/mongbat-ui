@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Docks · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Docks</h1>
+<p dir="auto">The Docks window lists the creatures near you as health bars, so that you can see who is around and how they are doing. Each bar shows a name in the colour of the creature's notoriety, a bar of health, and the percent of health left. The nearest creature comes first. Creatures more than 25 tiles away are left out, and a tab lists at most twenty bars.</p>
+<p dir="auto">The window has tabs that sort the creatures. Mobiles lists everyone, Friendly lists the innocent and friendly ones, and Hostiles lists the hostile ones. Pets lists your pets and shows how many of your follower places they use. You never appear in the lists, and your party members are left out. Your pets appear only on the Pets tab.</p>
+<div class="grid">
+  <figure id="mobiles">
+    <div class="shot"><a href="dockspots/mobiles.png"><img src="dockspots/mobiles.png" alt="Docks, mobiles" loading="lazy"></a></div>
+    <figcaption>The Mobiles tab with a mix of people and creatures near you. A poisoned murderer has a green bar and the word &quot;Poisoned&quot;. The Pets tab shows that two of five follower places are in use.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>Choose Docks in the menu of your own paperdoll.</li>
+<li>Use the Docks action, in the Menu Actions group of the Actions window. You can put the action on a hotbar.</li>
+<li>The window opens by itself at login when you left it open.</li>
+<li>Right-click the window or a bar to close it. Choose Docks again to close it the same way.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click a tab to see its list.</li>
+<li>Shift+right-click a tab for its menu. Filters chooses what the tab lists. New Tab adds a tab, Rename Tab renames it and Remove Tab removes it.</li>
+<li>Choose Extract in a tab's menu to take the tab out into a window of its own. Choose Re-Integrate, from the menu of that window's tab, to put it back. A window of its own has no right-click to close it.</li>
+<li>Click a bar to target its creature.</li>
+<li>Control+click a bar to choose the spell that a quick cast puts on the creature. Shift+click a bar to cast that spell on the creature.</li>
+<li>Double-click a bar to open the creature's paperdoll.</li>
+<li>Drop an item on a bar to give it to the creature.</li>
+<li>Shift+right-click a bar to open the server's menu for the creature.</li>
+<li>Hover over a bar to read a name that is cut off. An arrow also floats over the creature in the world.</li>
+<li>Roll the mouse wheel over the list to scroll it.</li>
+<li>Drag the corner grip to resize the window. The size is remembered.</li>
+<li>Drag the window to move it.</li>
+<li>Right-click to close the window.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Changed a creature's or a player's name in a tooltip to show in their notoriety colour.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>The docks list the creatures near you as health bars, in tabs for everyone, the friendly, the hostile and your pets.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

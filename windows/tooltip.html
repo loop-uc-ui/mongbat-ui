@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tooltip · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Tooltip</h1>
+<p dir="auto">A tooltip is the small box of text that appears when you rest the pointer over something. It tells you what the thing is. Every tooltip is laid out the same way, from the top:</p>
+<ul dir="auto">
+<li>the thing's name, in white;</li>
+<li>what it does;</li>
+<li>its numbers, one to a line, with each name at the left and its value in white at the right, such as an item's properties or a skill's Real, Modded and Cap;</li>
+<li>a list, such as a spell's reagents;</li>
+<li>a hint, dim, such as what a drag does.</li>
+</ul>
+<p dir="auto">A tooltip shows only the parts it has, with a small gap between each two.</p>
+<p dir="auto">The box follows the pointer and stands above and to the left of it. At the top or left edge of the screen, it moves to the other side so that it stays whole. A tooltip too tall for the screen shortens what it says the thing does, and ends it with "...".</p>
+<div class="grid">
+  <figure id="buff">
+    <div class="shot"><a href="tooltip/buff.png"><img src="tooltip/buff.png" alt="Tooltip, buff" loading="lazy"></a></div>
+    <figcaption>The tooltip of a buff in the buff list. It shows the buff's name, Evil Omen, and a sentence under it that says what the buff does, wrapped over several lines.</figcaption>
+  </figure>
+  <figure id="firstrun-choice">
+    <div class="shot"><a href="tooltip/firstrun-choice.png"><img src="tooltip/firstrun-choice.png" alt="Tooltip, firstrun-choice" loading="lazy"></a></div>
+    <figcaption>The tooltip of one choice in the prompt that a new character sees on first entering the game. It names the choice, Use the Classic Client's default settings, and tells what the choice does and what stays as it was.</figcaption>
+  </figure>
+  <figure id="item">
+    <div class="shot"><a href="tooltip/item.png"><img src="tooltip/item.png" alt="Tooltip, item" loading="lazy"></a></div>
+    <figcaption>The tooltip of an item in an open backpack, here a composite bow. Under its name are the words Exceptional and Two-handed Weapon, then each property with a value, one to a line, with the values lined up at the right.</figcaption>
+  </figure>
+  <figure id="spell">
+    <div class="shot"><a href="tooltip/spell.png"><img src="tooltip/spell.png" alt="Tooltip, spell" loading="lazy"></a></div>
+    <figcaption>The tooltip of a spell in a spellbook, here Arch Protection. It shows the spell's name, what it does, and a list of the reagents that it uses.</figcaption>
+  </figure>
+  <figure id="stock-command">
+    <div class="shot"><a href="tooltip/stock-command.png"><img src="tooltip/stock-command.png" alt="Tooltip, stock-command" loading="lazy"></a></div>
+    <figcaption>The tooltip of a button on the client's own menu bar. It shows only the button's name, here Virtues.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The tooltip appears when you rest the pointer over something that has a tooltip, such as a buff, a spell, an item, a hotbar slot or a button.</li>
+<li>An item's tooltip appears once the server has sent the item's properties. Until then, nothing shows.</li>
+<li>The tooltip goes away as soon as the pointer leaves the thing, or when the thing closes.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Rest the pointer over a thing to read its tooltip. Nothing needs a click.</li>
+<li>Move the pointer, and the tooltip moves with it.</li>
+<li>Hover over a row whose name is cut off to read the name whole.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Added a weapon's two abilities to its tooltip, and finding a weapon in a bag by an ability's name.</li><li>Changed a creature's or a player's name in a tooltip to show in their notoriety colour.</li><li>Changed tooltips to line an item's values up at the right.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

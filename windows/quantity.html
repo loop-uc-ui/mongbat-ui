@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantity · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Quantity</h1>
+<p dir="auto">The quantity window asks how many items you want to take from a stack. It shows a box that holds a number, a slider under the box, and the buttons Okay and Cancel. The box starts with the whole stack, and the slider starts at its far end.</p>
+<p dir="auto">The window opens under the pointer and follows it. Click to put it down where you want it.</p>
+<div class="grid">
+  <figure id="stack">
+    <div class="shot"><a href="quantity/stack.png"><img src="quantity/stack.png" alt="Quantity, stack" loading="lazy"></a></div>
+    <figcaption>The window after you drag from a stack of 150 arrows. The box holds 150, and the slider stands at its right end.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The window opens when you drag from a stack and the client asks how many to take. Whether it asks depends on the client's setting about holding Shift to split a stack.</li>
+<li>Control+drag on a stack in a container takes one item at once, and no window opens.</li>
+<li>The window closes when you answer it, whether you take some items or cancel.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Type a number in the box. The box is ready for typing, with its number selected, so that your first key replaces the starting value.</li>
+<li>Drag the slider to choose an amount. The box shows the number that the slider stands on. A small stack has a stop for each item.</li>
+<li>Typing in the box moves the slider to match.</li>
+<li>Click Okay, or press Enter, to take that many items. An amount larger than the stack takes the whole stack.</li>
+<li>Click Cancel, or press Escape, to take nothing. A box that holds 0 also takes nothing.</li>
+<li>Right-click anywhere on the window to cancel.</li>
+<li>Drag the window by its background to move it.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Changed every find box to stand under its window's title, and every place to type to stand on a dark plate.</li><li>Changed a dialog's buttons to stand at the lower right, with the button that agrees on the right.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.3">v1.0.0-alpha.3</a></h3><ul><li>The quantity prompt opens at the cursor and follows it until you click to put it down, as the default UI's does.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

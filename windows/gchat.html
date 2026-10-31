@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Global Chat Friends · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Global Chat Friends</h1>
+<p dir="auto">The Global Chat window is your friends list for Global Chat. The title says how many friends you have. Each row shows a friend's name, with the word "online" in green beside the friends who are online.</p>
+<p dir="auto">Friends who are online come first, and the rest follow in order of name. Two buttons stand at the foot. Add Friend adds someone, and the second button shows whether you are Online or Offline yourself.</p>
+<div class="grid">
+  <figure id="roster">
+    <div class="shot"><a href="gchat/roster.png"><img src="gchat/roster.png" alt="Global Chat Friends, roster" loading="lazy"></a></div>
+    <figcaption>The window with nine friends, four of them online. The online friends stand first with a green &quot;online&quot; beside each name, and the others follow in order of name. The list scrolls, so the last rows are below the edge.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>The Friends action, in the Menu Actions group of the Actions window, opens the window and closes it again. You can put the action on a hotbar.</li>
+<li>The Friends entry in the chat menu opens it too. The chat menu opens from the button on the chat line, and from Shift+right-click on the chat.</li>
+<li>The window closes when you open it again from either, and a right-click anywhere on the window closes it.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click a friend to write to that friend. The chat line is set to that friend and the cursor goes into it.</li>
+<li>Hover over a friend to read a reminder of that click.</li>
+<li>Click Add Friend to add someone. The game then asks you for the name. It does nothing while you show as Offline.</li>
+<li>Click the Online or Offline button to change whether you show as available. The button's word is your state now.</li>
+<li>Shift+right-click a friend to remove that friend from the list. It does nothing while you show as Offline.</li>
+<li>Roll the mouse wheel over the list to scroll it.</li>
+<li>Right-click to close the window.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Fixed the Global Chat presence button showing an old word after the client changed your presence.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>The chat has a menu for channels, Global Chat friends and ignore lists.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

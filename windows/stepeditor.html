@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Step Editor · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Step Editor</h1>
+<p dir="auto">The Step Editor changes one step of a macro: what it does, and when it runs. It opens beside the Macros window when you click a step there. Every change is made at once.</p>
+<p dir="auto">A step can run always, or only when all of its tests hold, or when any one of them holds. A test reads something about you or your target: a number such as your health, or something that holds or not, such as whether a buff is running or the target is hostile. As the macro runs, each step's tests are checked just before the step, and a step whose tests do not hold is skipped. The tests are the conditions of the script language; the Scripting page describes them.</p>
+<div class="grid">
+  <figure id="conditions">
+    <div class="shot"><a href="stepeditor/conditions.png"><img src="stepeditor/conditions.png" alt="Step Editor, conditions" loading="lazy"></a></div>
+    <figcaption>The editor on a Greater Heal step that aims at you. It runs when all of its tests hold: your health is below 60 percent, and Bless is not active.</figcaption>
+  </figure>
+  <figure id="script">
+    <div class="shot"><a href="stepeditor/script.png"><img src="stepeditor/script.png" alt="Step Editor, script" loading="lazy"></a></div>
+    <figcaption>A step whose condition nests one test inside another, which the rows of tests cannot show. The editor shows the condition in words, and the script view edits it.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>Click a step in the Macros window.</li>
+<li>Adding a step from the step list opens the editor on the new step.</li>
+<li>To move a step, drag its handle in the Macros window. The editor stays on the step.</li>
+<li>A right-click closes the window.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click Change to make the step another action, from the step list. Its tests stay.</li>
+<li>For a step that aims, choose its target: the cursor, yourself or your current target.</li>
+<li>For a step that speaks, type its words. For a wait, type how many seconds it waits.</li>
+<li>Choose when the step runs: always, when all of these hold, or when any of these holds. Choosing all or any gives the step a first test, your health below full.</li>
+<li>In a test, choose You or Target, then what to read. For a number, choose how it compares and type the value; add % for a share of the maximum, such as 60%. For a skill or a buff, choose which one. For something that holds or not, choose yes or no.</li>
+<li>Click Add a test for another test, up to four. Click the X beside a test to remove it. With no test left, the step runs always.</li>
+<li>Click Delete to remove the step.</li>
+<li>A macro that holds an equip set, an unequip step, a target by resource, or an arm or disarm step cannot be changed here. Drag actions onto it in the Macros window instead.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Changed every find box to stand under its window's title, and every place to type to stand on a dark plate.</li><li>Fixed the Macros window refusing changes to a macro that has an equip, arm or harvest step.</li><li>Fixed an empty border around the pictures in Macros, the Step Editor and the Target window.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.3">v1.0.0-alpha.3</a></h3><ul><li>A macro's step can run only when its tests hold, all of them or any one, such as your health below 60 percent or a buff that is running. Click a step to open it in the step editor, where you change its action, its target and when it runs.</li><li>The button that removes a step, a script line or a test now shows a cross, and the button on a shop row that asks how many shows a number sign. Each lights under the pointer and says on hover what it does.</li></ul>
+</main>
+<footer>Pictures drawn from commit 417a12a8 on 2026-10-31. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>
