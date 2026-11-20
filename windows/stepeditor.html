@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Step Editor · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Step Editor</h1>
+<p dir="auto">Changes what one step of a macro does and when it runs.</p>
+<div class="grid">
+  <figure id="conditions">
+    <div class="shot"><a href="stepeditor/conditions.png"><img src="stepeditor/conditions.png" alt="Step Editor, conditions" loading="lazy"></a></div>
+    <figcaption>A Greater Heal step that runs when your health is low and Bless is off.</figcaption>
+  </figure>
+  <figure id="script">
+    <div class="shot"><a href="stepeditor/script.png"><img src="stepeditor/script.png" alt="Step Editor, script" loading="lazy"></a></div>
+    <figcaption>A step whose condition is shown in words.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>Click a step in the Macros window to open it.</li>
+<li>Add a step from the step list to open it on the new step.</li>
+<li>Right-click the window to close it.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click Change to make the step another action.</li>
+<li>Choose what a step that aims should aim at.</li>
+<li>Type the words for a step that speaks, or the seconds for a wait.</li>
+<li>Choose whether the step runs always, when all its tests hold, or when any holds.</li>
+<li>Set each test to read something about you or your target.</li>
+<li>Click Add a test to add a test, and the X to remove one.</li>
+<li>Click Delete to remove the step.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-beta.1">v1.0.0-beta.1</a></h3><ul><li>Changed the Step Editor's Target box to offer the same choices as the step's menu.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Changed every find box to stand under its window's title, and every place to type to stand on a dark plate.</li><li>Fixed the Macros window refusing changes to a macro that has an equip, arm or harvest step.</li><li>Fixed an empty border around the pictures in Macros, the Step Editor and the Target window.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.3">v1.0.0-alpha.3</a></h3><ul><li>A macro's step can run only when its tests hold, all of them or any one, such as your health below 60 percent or a buff that is running. Click a step to open it in the step editor, where you change its action, its target and when it runs.</li><li>The button that removes a step, a script line or a test now shows a cross, and the button on a shop row that asks how many shows a number sign. Each lights under the pointer and says on hover what it does.</li></ul>
+</main>
+<footer>Pictures drawn from commit f23ca25b on 2026-11-20. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

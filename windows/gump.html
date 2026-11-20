@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Server Dialogs · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Server Dialogs</h1>
+<p dir="auto">Shows a window the game server sends, such as a travel menu or a runebook.</p>
+<div class="grid">
+  <figure id="entry">
+    <div class="shot"><a href="gump/entry.png"><img src="gump/entry.png" alt="Server Dialogs, entry" loading="lazy"></a></div>
+    <figcaption>A question that asks for a line of text.</figcaption>
+  </figure>
+  <figure id="list">
+    <div class="shot"><a href="gump/list.png"><img src="gump/list.png" alt="Server Dialogs, list" loading="lazy"></a></div>
+    <figcaption>A travel dialog with ten towns and a Next button.</figcaption>
+  </figure>
+  <figure id="message">
+    <div class="shot"><a href="gump/message.png"><img src="gump/message.png" alt="Server Dialogs, message" loading="lazy"></a></div>
+    <figcaption>A long message with OK and Cancel buttons.</figcaption>
+  </figure>
+  <figure id="runebook">
+    <div class="shot"><a href="gump/runebook.png"><img src="gump/runebook.png" alt="Server Dialogs, runebook" loading="lazy"></a></div>
+    <figcaption>A runebook listing its runes, with one rune chosen.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>A dialog opens when the server sends one.</li>
+<li>The Town Crier's greeting does not open when you log in.</li>
+<li>The veteran rewards do not open when you log in. Choose Rewards in your paperdoll's menu, use the Rewards action, or type /rewards to open them.</li>
+<li>Right-click the veteran rewards to put them away until you open them again.</li>
+<li>Use a runebook to open its dialog.</li>
+<li>Right-click the dialog to close it without choosing.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Click a button to give that answer.</li>
+<li>Click Next or Previous to see more choices.</li>
+<li>Type your answer in the box and press Enter to send it.</li>
+<li>Click Submit to send your answer, Clear to empty the box, or Cancel to send nothing.</li>
+<li>Click a rune in a runebook to choose it.</li>
+<li>Click a travel button in a runebook to travel to the chosen rune.</li>
+<li>Click the three dots in a runebook for more things to do with the rune and the book.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-beta.3">v1.0.0-beta.3</a></h3><ul><li>Added the Recall that spends one of the book's charges to the runebook.</li></ul>
+<h3><a href="../releases.html#v1.0.0-beta.2">v1.0.0-beta.2</a></h3><ul><li>Fixed the veteran rewards prompt popping up after a fast travel.</li></ul>
+<h3><a href="../releases.html#v1.0.0-beta.1">v1.0.0-beta.1</a></h3><ul><li>Added Rewards to your paperdoll's menu, a Rewards action and /rewards, to open your veteran rewards.</li><li>Changed the veteran rewards and the Town Crier's greeting to no longer pop up when you log in.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Changed every find box to stand under its window's title, and every place to type to stand on a dark plate.</li><li>Changed a dialog's buttons to stand at the lower right, with the button that agrees on the right.</li><li>Changed server dialogs to appear without a flash when a window draws them itself.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.3">v1.0.0-alpha.3</a></h3><ul><li>A server dialog's hover goes away when you move off it, when you hover something else, and when the dialog closes. Before, the vendor search's hover stayed up.</li></ul>
+</main>
+<footer>Pictures drawn from commit f23ca25b on 2026-11-20. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

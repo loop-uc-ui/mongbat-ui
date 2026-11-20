@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Container · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Container</h1>
+<p dir="auto">Shows what is inside a bag, a box or a corpse.</p>
+<div class="grid">
+  <figure id="backpack-freeform">
+    <div class="shot"><a href="container/backpack-freeform.png"><img src="container/backpack-freeform.png" alt="Container, backpack-freeform" loading="lazy"></a></div>
+    <figcaption>Your backpack drawn as its own picture, with the items inside.</figcaption>
+  </figure>
+  <figure id="backpack-grid">
+    <div class="shot"><a href="container/backpack-grid.png"><img src="container/backpack-grid.png" alt="Container, backpack-grid" loading="lazy"></a></div>
+    <figcaption>Your backpack in the grid view, holding thirty-one items.</figcaption>
+  </figure>
+  <figure id="corpse">
+    <div class="shot"><a href="container/corpse.png"><img src="container/corpse.png" alt="Container, corpse" loading="lazy"></a></div>
+    <figcaption>A lizardman's corpse with a Loot All button.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>Double-click a bag, a box or a corpse to open it.</li>
+<li>Press the backpack key to open your backpack.</li>
+<li>Use the Backpack action to open your backpack.</li>
+<li>Right-click the window to close it.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Double-click an item to use it.</li>
+<li>Hover over an item to see its properties.</li>
+<li>Drag an item onto an empty slot to put it there.</li>
+<li>Control+drag a stack to take one item from it.</li>
+<li>Type in the search box to filter the items.</li>
+<li>Use or, -, brackets and quotes in the search box to combine words.</li>
+<li>Click Loot All to move a corpse's items to your backpack.</li>
+<li>Shift+right-click an item on a corpse to loot it.</li>
+<li>Click Take to move the items you searched for to your backpack.</li>
+<li>Click Organize to sort items by your Organizer profile.</li>
+<li>Click the button at the top right to switch between the grid and the bag's picture.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-beta.3">v1.0.0-beta.3</a></h3><ul><li>Changed containers to have no Narrower and Wider menu. Drag the corner to change a container's width.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.5">v1.0.0-alpha.5</a></h3><ul><li>Changed a container's search to look only in that container.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Added and, or, not, brackets and quoted phrases to every find box.</li><li>Added a weapon's two abilities to its tooltip, and finding a weapon in a bag by an ability's name.</li><li>Changed every find box to stand under its window's title, and every place to type to stand on a dark plate.</li><li>Changed a large container, such as a corpse that others are looting, to do much less work as it opens and as items leave it.</li><li>Fixed a bag's item count staying at the old number after the server moved an item out.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.3">v1.0.0-alpha.3</a></h3><ul><li>A container keeps each item in its own slot, as the default UI left it, and an item let go on an empty slot lands in that slot. Before, items were packed in order, and a used-up stack moved every item after it.</li><li>The container's View button shows a pouch for the freeform view.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.2">v1.0.0-alpha.2</a></h3><ul><li>A container shows in its lower right corner how many items it holds, counting those in the bags inside it, and the most it can hold.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.1">v1.0.0-alpha.1</a></h3><ul><li>Containers show a grid of items or the bag's own picture. A find box searches the bag and the bags inside it, and a corpse has Loot All.</li></ul>
+</main>
+<footer>Pictures drawn from commit f23ca25b on 2026-11-20. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

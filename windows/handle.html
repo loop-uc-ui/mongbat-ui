@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Name Plates · mongbat-ui</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><nav>
+  <a class="name" href="../index.html">mongbat-ui</a>
+  <a href="../index.html">Home</a>
+  <a href="../windows/index.html" aria-current="page">Windows</a>
+  <a href="../scripting.html">Scripting</a>
+  <a href="../releases.html">Releases</a>
+  <a href="https://github.com/loop-uc-ui/mongbat-ui">GitHub</a>
+</nav></header>
+<main>
+<p><a href="index.html">Windows</a></p>
+<h1>Name Plates</h1>
+<p dir="auto">Shows the names of the items and creatures near you.</p>
+<div class="grid">
+  <figure id="filter">
+    <div class="shot"><a href="handle/filter.png"><img src="handle/filter.png" alt="Name Plates, filter" loading="lazy"></a></div>
+    <figcaption>The list of filters, with only the vendor's plate showing.</figcaption>
+  </figure>
+  <figure id="guildmate">
+    <div class="shot"><a href="handle/guildmate.png"><img src="handle/guildmate.png" alt="Name Plates, guildmate" loading="lazy"></a></div>
+    <figcaption>A plate over a guildmate, in green.</figcaption>
+  </figure>
+  <figure id="hostile">
+    <div class="shot"><a href="handle/hostile.png"><img src="handle/hostile.png" alt="Name Plates, hostile" loading="lazy"></a></div>
+    <figcaption>A plate over a hostile creature, in red.</figcaption>
+  </figure>
+  <figure id="innocent">
+    <div class="shot"><a href="handle/innocent.png"><img src="handle/innocent.png" alt="Name Plates, innocent" loading="lazy"></a></div>
+    <figcaption>A plate over an innocent character, in blue.</figcaption>
+  </figure>
+  <figure id="item">
+    <div class="shot"><a href="handle/item.png"><img src="handle/item.png" alt="Name Plates, item" loading="lazy"></a></div>
+    <figcaption>A plate over a forge.</figcaption>
+  </figure>
+  <figure id="long-name">
+    <div class="shot"><a href="handle/long-name.png"><img src="handle/long-name.png" alt="Name Plates, long-name" loading="lazy"></a></div>
+    <figcaption>A plate with a long name cut short.</figcaption>
+  </figure>
+</div>
+<h2 dir="auto">Opening it</h2>
+<ul dir="auto">
+<li>Hold Ctrl and Shift to show the plates.</li>
+<li>Let go of Ctrl and Shift to hide them.</li>
+</ul>
+<h2 dir="auto">Using it</h2>
+<ul dir="auto">
+<li>Turn the mouse wheel or click a filter to choose which plates show.</li>
+<li>Click a creature's plate to target the creature.</li>
+<li>Drag a creature's plate to pull off its health bar.</li>
+<li>Drag an item's plate to pick the item up.</li>
+<li>Double-click a plate to use the object.</li>
+<li>Hover over a plate to see the object's properties.</li>
+<li>Right-click a plate to close it.</li>
+</ul>
+<h2>Changes</h2>
+<h3><a href="../releases.html#v1.0.0-beta.2">v1.0.0-beta.2</a></h3><ul><li>Changed an item's name plate to go away as soon as you pick the item up.</li><li>Fixed the Corpses filter showing no name plates.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.5">v1.0.0-alpha.5</a></h3><ul><li>Added an Object Handles page in Settings, to write your own object handle filters. It replaces the object handle rows on the Overhead Text page.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.4">v1.0.0-alpha.4</a></h3><ul><li>Changed a creature's or a player's name in a tooltip to show in their notoriety colour.</li><li>Changed the name plates' filter list to look like a menu, under the title Object Handles.</li></ul>
+<h3><a href="../releases.html#v1.0.0-alpha.3">v1.0.0-alpha.3</a></h3><ul><li>While you hold Ctrl and Shift for the name plates, a list of filters shows with them. Turn the wheel anywhere, or click a filter, and the plates change at once. Drag the list to move it, and it opens where you left it. Your choice is saved when you let go.</li><li>The name plate filters add Item Only, Hostile, Friends and My pets. The default UI gets the filter you chose when you go back to it, or every plate for a filter it does not have.</li><li>A name plate's hover no longer shows only the name that is already on the plate.</li></ul>
+</main>
+<footer>Pictures drawn from commit f23ca25b on 2026-11-20. Ultima Online is a trademark of Electronic Arts Inc. This project is not affiliated with, or endorsed by, Electronic Arts Inc. or Broadsword Online Games.</footer>
+</body>
+</html>

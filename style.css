@@ -1,0 +1,36 @@
+
+:root { color-scheme: light dark; --bg: #f6f5f1; --panel: #ffffff; --text: #22211e; --muted: #6b6860;
+  --accent: #8a5a14; --line: #dedbd2; --stage: #3b4a3a; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #16181a; --panel: #202326; --text: #e4e2dc; --muted: #9a978f; --accent: #d9b56a; --line: #33373b; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, sans-serif; }
+.bar { border-bottom: 1px solid var(--line); background: var(--panel); }
+.bar nav, main, footer { max-width: 1100px; margin: 0 auto; padding: 12px 16px; }
+.bar nav { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; }
+.bar .name { font-weight: 700; color: var(--text); margin-right: auto; }
+.bar a[aria-current] { color: var(--text); font-weight: 600; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { font-size: 28px; line-height: 1.25; margin: 16px 0 8px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+code { font-size: 0.9em; background: color-mix(in srgb, var(--text) 8%, transparent); padding: 1px 4px; border-radius: 4px; }
+.lead { color: var(--muted); margin: 0 0 16px; }
+.anchor { display: none; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 16px; align-items: start; }
+.card, figure { margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px; }
+.card { display: block; color: var(--text); }
+.card:hover { border-color: var(--accent); text-decoration: none; }
+.card h2 { margin: 8px 0 4px; font-size: 17px; color: var(--accent); }
+.card p { margin: 0; font-size: 14px; color: var(--muted); }
+.shot { background: var(--stage); border-radius: 4px; display: flex; align-items: center; justify-content: center; padding: 8px; }
+.card .shot { height: 180px; }
+.card .shot img { max-height: 164px; }
+.shot img { display: block; max-width: 100%; height: auto; image-rendering: pixelated; }
+figcaption { margin-top: 8px; font-size: 14px; color: var(--muted); }
+figcaption b { color: var(--text); }
+.release { border-top: 1px solid var(--line); padding: 8px 0 16px; }
+.release h2 { margin-bottom: 0; }
+.tag { display: inline-block; font-size: 12px; border: 1px solid var(--line); border-radius: 999px; padding: 0 8px; margin-left: 8px; color: var(--muted); vertical-align: middle; }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); margin-top: 48px; }
